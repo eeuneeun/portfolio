@@ -1,0 +1,99 @@
+#@apiUrl = localhost:10200
+@apiUrl = 175.207.12.138:10200
+@authUrl = 175.207.12.138:10050
+
+### ────────────────────────────────────────────────────  휴대폰번호가입 ────────────────────────────────────────────────────────────────────
+#핸드폰번호인증
+POST http://{{apiUrl}}/api/v1/phone/validation
+content-type: application/json
+
+{
+    "phone":"01056785678"
+}
+
+###
+#핸드폰번호인증 시간 연장
+POST http://{{apiUrl}}/api/v1/phone/validation/timeReset
+content-type: application/json
+
+{
+    "phone":"01056785678"
+}
+
+###
+#핸드폰번호인증체크
+POST http://{{apiUrl}}/api/v1/phone/validation/number
+content-type: application/json
+
+{
+    "phone":"01056785678",
+    "num":"614694"
+}
+
+###
+#핸드폰번호가입
+POST http://{{apiUrl}}/api/v1/regist
+content-type: application/json
+
+{
+    "username":"01056785678",
+    "phone":"01056785678",
+    "password":"1234"
+}
+
+
+### ────────────────────────────────────────────────────  소셜가입 ────────────────────────────────────────────────────────────────────
+#네이버/카카오 가입체크
+#가입이 되어 있으면 엑세스 토큰을 리턴, 미가입 시 가입 요구 내용 출력
+#idp : naver, kakao
+POST http://{{apiUrl}}/api/v1/token/idp
+content-type: application/json
+
+{
+    "idp":"naver"
+    ,"idpToken":"AAAAOE5RFDxY1eU4jNvNoNmDM2SbgG4U2kGX6e_uYVyWlQJceZnPXx1hO6PH98vwLJ7e6sHIjd90WqOa8VnzcEhMHgI"
+}
+
+###
+#핸드폰번호인증
+POST http://{{apiUrl}}/api/v1/phone/validation
+content-type: application/json
+
+{
+    "phone":"010000001234"
+}
+
+###
+#핸드폰번호인증 시간 연장
+POST http://{{apiUrl}}/api/v1/phone/validation/timeReset
+content-type: application/json
+
+{
+    "phone":"01012341234"
+}
+
+###
+#핸드폰번호인증체크
+POST http://{{apiUrl}}/api/v1/phone/validation/number
+content-type: application/json
+
+{
+    "phone":"010000001234",
+    "num":"024595"
+}
+
+###
+#네이버/카카오 핸드폰 인증 후 가입
+#idp : naver, kakao
+POST http://{{apiUrl}}/api/v1/regist/idp
+content-type: application/json
+
+{
+    "idp":"naver"
+    ,"phone":"010000001234"
+    ,"idpToken":"AAAAOE5RFDxY1eU4jNvNoNmDM2SbgG4U2kGX6e_uYVyWlQJceZnPXx1hO6PH98vwLJ7e6sHIjd90WqOa8VnzcEhMHgI"
+}
+
+### 고객 탈퇴
+POST http://{{apiUrl}}/api/v1/customer/leave
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ4UklMcGJyLTZ3bktVbGlacURSb1o5R04tLTJfQ09nRnZELWpROFRMdjc0In0.eyJleHAiOjE2MzE2MzE3NzAsImlhdCI6MTYzMTYzMTQ3MCwianRpIjoiNTZhMjE3MTEtMWQzYi00ZTdhLWFjNjMtZTM1MTY4YzQzMDg1IiwiaXNzIjoiaHR0cDovLzE3NS4yMDcuMTIuMTM4OjEwMDUwL2F1dGgvcmVhbG1zL2twcCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI5MDczMTZiZi0zNzU3LTQzNDUtODkwMi1hNTVkOWJkZTk2MzciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1zcHJpbmctYm9vdCIsInNlc3Npb25fc3RhdGUiOiIwNzVlZmZiMi05ZDBmLTRlZWMtODcwYi03MDI1MWU0MjkwMTIiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNVU1RPTUVSX0FETUlOIiwiZGVmYXVsdC1yb2xlcy1rcHAiLCJvZmZsaW5lX2FjY2VzcyJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiODExNjU5MGEtZWZjMy00MTNkLWE1Y2YtNGRhMmI1ZmU3NDQ2In0.RTbrN8jguR7OeEh-47rhY3UPeSGwE0exA2IUZsy7SPOSpfsQUROOuAHWgTyYrHFMqtJKHgeItarph1dckvTXNZ0ZARfk22Y4jSyZmEvZYgXTTGI7-T3v3IPGe0gLEvRlQa7CXo9WTIx6XhbiW1FeYVOZxGJJf-sP2IbzUPGkyji1DON6Yi_mq83cK8T8QXkb7wAF2A3IS0FjbGmyYZC2DnxNdLydj3TPoCFKw9-Ke46SjYJJr8taGALo2trCfsaY0sdOErUTAGcBJrBAMPN4w7YyJLLtCAEL2iZS7-kI4OlAiqInqPGpq0ugQf4Xc12kOIHYpDG2P2DMdbVjVPauvA

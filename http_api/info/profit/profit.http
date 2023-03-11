@@ -1,0 +1,90 @@
+#@apiUrl = localhost:10200
+@apiUrl = 175.207.12.138:10200
+@authUrl = 175.207.12.138:10050
+
+### ────────────────────────────────────────────────────  고객 ────────────────────────────────────────────────────────────────────
+
+### 고객 로그인
+# @name login
+POST http://{{authUrl}}/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=web
+#&username=customer1
+&phone_number=01012341234
+&password=1234
+&grant_type=password
+#&scope=offline_access
+
+### token
+@accessToken = {{login.response.body.access_token}}
+@refreshToken = {{login.response.body.refresh_token}}
+
+### smp 목록
+# 파라미터
+# startDate 시작일
+# endDate 종료일
+GET http://{{apiUrl}}/api/v1/smp?startDate=2021-09-08
+Authorization: Bearer {{accessToken}}
+
+
+### rec 목록
+# 파라미터
+# startDate 시작일
+# endDate 종료일
+GET http://{{apiUrl}}/api/v1/rec
+Authorization: Bearer {{accessToken}}
+
+
+### 발전소 권한 목록
+# 파라미터
+# startDate 시작일
+# endDate 종료일
+# plantId 발전소
+# inverterId 인버터
+GET http://{{apiUrl}}/api/v1/customers/auth/plants
+Authorization: Bearer {{accessToken}}
+
+### 발전소별 발전량 목록
+# 파라미터
+# plantId 발전소
+# type 타입 (hour, week, day, month, year)
+# startDate 시작일
+# endDate 종료일
+# stat 시간별
+# GET http://{{apiUrl}}/api/v1/customers/pv/stat?type=hour&plantId=1&startDate=2021-09-03&endDate=2021-09-03
+# Authorization: Bearer {{accessToken}}
+#stat 일별
+#GET http://{{apiUrl}}/api/v1/customers/pv/stat?type=day&plantId=1&startDate=2021-09-02&endDate=2021-09-03
+#Authorization: Bearer {{accessToken}}
+# stat 주별
+# GET http://{{apiUrl}}/api/v1/customers/pv/stat?type=week&plantId=1&startDate=2021-07-01&endDate=2021-09-03
+# Authorization: Bearer {{accessToken}}
+# stat 월별
+# GET http://{{apiUrl}}/api/v1/customers/pv/stat?type=month&plantId=1&startDate=2021-07-01&endDate=2021-09-03
+# Authorization: Bearer {{accessToken}}
+# stat 연별 (최초해부터 당해 연도까지)
+GET http://{{apiUrl}}/api/v1/customers/pv/stat?type=year&plantId=&startDate=2021-07-01&endDate=2021-09-03
+Authorization: Bearer {{accessToken}}
+
+### 발전소별 발전량 예측 목록
+# 파라미터
+# plantId 발전소
+# type 타입 (hour, day, month, year)
+# stat 통계 (sum)
+GET http://{{apiUrl}}/api/v1/customers/pv/fcst/stat?type=hour&plantId=
+Authorization: Bearer {{accessToken}}
+# stat 일별 (당월 1일부터 현재 일까지)
+#GET http://{{apiUrl}}/api/v1/customers/pv/fcst/stat?type=day&plantId=
+#Authorization: Bearer {{accessToken}}
+# stat 월별 (당해 1월부터 현재 월까지)
+#GET http://{{apiUrl}}/api/v1/customers/pv/fcst/stat?type=month&plantId=
+#Authorization: Bearer {{accessToken}}
+# stat 연별 (최초해부터 당해 연도까지)
+#GET http://{{apiUrl}}/api/v1/customers/pv/fcst/stat?type=year&plantId=
+#Authorization: Bearer {{accessToken}}
+
+
+
+## REC거래정보 입력 CRUD
+## REC수익금 입력 R

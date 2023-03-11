@@ -1,0 +1,22 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group_21" data-name="Group 21" transform="translate(-428.724 -43)">
+    <g id="Group_14" data-name="Group 14">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(428.724 43)" fill="#35a367"/>
+    </g>
+    <g id="Group_19" data-name="Group 19">
+      <g id="Group_15" data-name="Group 15">
+        <path id="Path_36" data-name="Path 36" d="M436.219,50.682a1.25,1.25,0,1,1-1.25-1.216A1.233,1.233,0,0,1,436.219,50.682Z" fill="#25682b"/>
+      </g>
+      <g id="Group_18" data-name="Group 18">
+        <g id="Group_17" data-name="Group 17">
+          <g id="Group_16" data-name="Group 16">
+            <path id="Path_37" data-name="Path 37" d="M443.729,50.682a1.25,1.25,0,1,1-1.25-1.216A1.233,1.233,0,0,1,443.729,50.682Z" fill="#25682b"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_20" data-name="Group 20">
+      <path id="Path_38" data-name="Path 38" d="M438.724,58a5.212,5.212,0,0,1-4.7-2.668.493.493,0,0,1,.885-.436h0a4.493,4.493,0,0,0,7.625,0,.494.494,0,0,1,.887.434A5.216,5.216,0,0,1,438.724,58Z" fill="#25682b"/>
+    </g>
+  </g>
+</svg>

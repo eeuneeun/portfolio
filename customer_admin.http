@@ -1,0 +1,53 @@
+#@apiUrl = localhost:10200
+@apiUrl = 175.207.12.138:10200
+@authUrl = 175.207.12.138:10050
+
+### ────────────────────────────────────────────────────  고객 관리자 ────────────────────────────────────────────────────────────────────
+
+### 고객 관리자 로그인
+# @name login
+POST http://175.207.12.138:10050/token
+#POST http://175.207.12.138:10050/auth/realms/test/protocol/openid-connect/token;
+Content-Type: application/x-www-form-urlencoded
+
+client_id=web
+&username=customer_admin
+&phone_number=01056785678
+&password=1234
+&grant_type=password
+
+### token
+@accessToken = {{login.response.body.access_token}}
+@refreshToken = {{login.response.body.refresh_token}}
+
+### smp 목록
+# 파라미터
+# startDate 시작일
+# endDate 종료일
+GET http://{{apiUrl}}/api/v1/smp
+# Authorization: Bearer {{accessToken}}
+
+
+### rec 목록
+# 파라미터
+# startDate 시작일
+# endDate 종료일
+GET http://{{apiUrl}}/api/v1/rec
+Authorization: Bearer {{accessToken}}
+
+
+### 발전소 권한 목록
+# 파라미터
+# startDate 시작일
+# endDate 종료일
+# plantId 발전소
+GET http://{{apiUrl}}/api/v1/customers/auth/plants
+Authorization: Bearer {{accessToken}}
+
+### 발전소별 발전량 목록
+# 파라미터
+# startDate 시작일
+# endDate 종료일
+# plantId 발전소
+GET http://{{apiUrl}}/api/v1/customers/pv?plantId=
+Authorization: Bearer {{accessToken}}

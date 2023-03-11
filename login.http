@@ -1,0 +1,31 @@
+### ────────────────────────────────────────────────────  로그인 ────────────────────────────────────────────────────────────────────
+
+### 고객 로그인
+POST http://175.207.12.138:10050/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=web
+&username=customer1
+&password=1234
+&grant_type=password
+
+
+
+
+
+### 시공사 로그인
+POST http://175.207.12.138:10050/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=web
+&username=provider1
+&password=1234
+&grant_type=password
+
+### 토큰 리프레쉬
+POST http://175.207.12.138:10050/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=web
+&grant_type=refresh_token
+&refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2ZmRmY2FjNi0yOTg5LTRmZGMtOTkwOC0zNTk3Y2Q5YTM5ODkifQ.eyJleHAiOjE2MjU2MjkxMDgsImlhdCI6MTYyNTYyNzMwOCwianRpIjoiYTFmNWQ1NmMtOTAxOC00ZmFlLWJkMzctMmE3YzJiYmM3MDg2IiwiaXNzIjoiaHR0cDovLzE3NS4yMDcuMTIuMTM4OjEwMDUwL2F1dGgvcmVhbG1zL2twcCIsImF1ZCI6Imh0dHA6Ly8xNzUuMjA3LjEyLjEzODoxMDA1MC9hdXRoL3JlYWxtcy9rcHAiLCJzdWIiOiI1MTMzOGZhYy01ZDI4LTRiNjctYTZlOS1hNWE2ZGZiNzM0MDgiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoid2ViIiwic2Vzc2lvbl9zdGF0ZSI6ImNlYzQ3ZTFlLWIxOGItNDU5YS05YTI3LWFiNDA1Y2QxNzUwOSIsInNjb3BlIjoicHJvZmlsZSBlbWFpbCJ9.nUoK-Zu_VEPX5NeJFyPEqTaM7ucOjQYcgyKME5cZ2aw

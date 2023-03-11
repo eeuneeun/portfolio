@@ -1,0 +1,92 @@
+@import url("./resource.css");
+
+/* header */
+.header.white{background: #fff; color:#333333; border-bottom: 1px solid #c2c2c2;box-shadow:10px 0 5px rgb(68, 68, 68, 0.3); }
+  
+  .header.white .btn.logout-btn{background:#fff !important; color: var(--theme-color); border: 1px solid var(--theme-color);}
+  .header.white .btn.logout-btn:hover *{color: var(--theme-color) !important;}
+  .header.white .left .gnb-btn,
+  .header.white .left h1 svg{color:var(--theme-color);}
+
+  .header.white .search-input-wrap .search-input{background: #fff !important; border: 1px solid #adadad; border-radius: 25px;}
+    .header.white select,
+    .header.white input,
+    .header.white select:focus-visible {border: 0 !important; width: 80%;}
+
+
+.white{background:#505550; color: #fff; border-bottom: 1px solid #15b600;}
+  .gnb.white ul.parents li a{color: #d1f5cf; font-weight: 500;}
+  .gnb.white ul.parents > li > a > i.inverted.grey.icon{color: #15b600!important;}
+  .gnb.white .child{background: #fff; box-shadow:10px 0 5px rgb(68, 68, 68, 0.3);}
+  .gnb.white .child ul{border-right: 1px solid #d1f5cf;}
+  .gnb.white .child li a{color: #333; font-weight: 500;}
+
+  
+
+
+ /* container */ 
+.container.white{background: #ffffff;}
+.container.white .pannel{background: #fff; border: 1px solid #c2c2c2;box-shadow:0 0 2px rgb(68, 68, 68, 0.3); color: #333; }
+.container.white .pannel-header{background: #fff; color: #333; border-bottom: 1px solid #c5c5c5; box-shadow:0 0 5px rgb(68, 68, 68, 0.3); font-size : 16px; font-weight: 500;}
+
+.white h2{color: #333; font-weight: 600;}
+.white .today ul li,
+.container.white h3,
+.container.white h4 { font-size: 15px; color: #333!important;}
+
+.white .my-plant ul li span{color: #fff;}
+.white .my-plant ul li span.error{background: #f00030;}
+.white .my-plant ul li span.warnning{background: #ddb500;}
+.white .my-plant ul li span.concern{background: #00c531;}
+
+.white .hoz-candle-chart{background: #e1e1e1;}
+
+/* 2-4. high chart custom */
+.white .highcharts-background{fill: #fff;}
+.white .highcharts-grid-line{stroke: #fff;}
+
+.white .highcharts-tick,
+.white .highcharts-axis-line{stroke: #919191;}
+
+.white .highcharts-legend-item > text,
+.white .highcharts-axis-labels{fill:#919191;}
+
+/* 2-5. tabulator custom*/
+.white .tabulator{border:0;}
+
+.white .tabulator .tabulator-header .tabulator-col.tabulator-sortable:hover,
+.white .tabulator .tabulator-header,
+.white .tabulator .tabulator-header .tabulator-colxss,
+.white .tabulator .tabulator-header .tabulator-col,
+.white .tabulator-row .tabulator-cell{ background: #fff; border:0; color: #919191; padding :5px 0;}
+
+.white .tabulator-row .tabulator-cell{padding :10px 0;}
+
+.white .tabulator .tabulator-tableHolder .tabulator-table,
+.white .tabulator-row,
+.white .tabulator{background: #fff;}
+
+.white .tabulator .tabulator-header::after{content: ''; display: block; width: 95%; position: absolute; bottom: 0; height: 1px; left: 50%; background: #4e4f52; margin-left: -47.5%;}
+
+.white .tabulator .tabulator-header .tabulator-col.tabulator-sortable[aria-sort=none] .tabulator-col-content .tabulator-col-sorter{margin-right: 10px;}
+
+.white .tabulator .tabulator-header .tabulator-col.tabulator-col-group .tabulator-col-group-cols{border-top: 1px solid #15b600;}
+
+
+/* input */
+.white select,
+.white input, 
+.white select:focus-visible{background: #fff; color: #333; border: 1px solid #adadad;}
+
+
+/* button */
+.white .gen-detail .each-plant .option .btn-wrap .btn{background: #15b600; border:0;}
+.white .option .btn,
+.white .btn.cal{ border: 0; background: #00c531; }
+
+
+/* candle */
+.white .pannel.compare .hoz-candle-chart{background: #fff;}
+.white .today .hoz-candle-chart ul li{background: #aaaaaa;}
+
+.white .hr{background: #aaaaaa;}

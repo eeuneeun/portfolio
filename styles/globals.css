@@ -1,0 +1,349 @@
+@import url("./resource.css");
+
+/*************************
+ 
+   3. common components
+
+**************************/
+
+/* 3-1. layout */
+#page{width: 100%; height: 100vh; background: var( --default-bg-color ); position: relative; }
+ #page h2{color: #fff; padding-left: 20px;}
+
+/* 3-2. header */
+.header{width: 100%; height: 85px; color:#f1fbff; justify-content: space-between; position: absolute; top: 0; left: 0; right: 0%; z-index: 999; padding: 0 20px;}
+ 
+
+  .header .left{padding-top: 5px;}
+    .header .left .gnb-btn{width:30px; cursor: pointer;}
+      .header .left .gnb-btn *{width:100%; margin-top: 5px;}
+    
+    .header .left h1{margin-left: 5px;}
+      .header .left h1 a{width: 55px; height: 21.33px;}
+      .header .left h1 a img{width: 100%;}
+
+    .header .left .select-ui{margin-left: 30px;}
+      .header .left .select-ui > img{width:15px; margin-right: 15px;}
+
+  .ui.checkbox .box, .ui.checkbox label{margin-top: 10px;}
+  .ui.toggle.checkbox .box:before, .ui.toggle.checkbox label:before{width:40px; height: 15px;}
+  .ui.toggle.checkbox .box:after, .ui.toggle.checkbox label:after{width: 15px; height: 15px;}
+
+  .header .left .select-ui .ui.toggle.checkbox .box:hover::before, .ui.toggle.checkbox label:hover::before,
+  .header .left .select-ui .ui.toggle.checkbox input:focus~.box:before, .ui.toggle.checkbox input:focus~label:before{background:#5e5e5e;}
+  .header .left .select-ui .ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input~label:before{background:#5e5e5e;}
+  .header .left .select-ui .ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before{background-color: #32BC5F!important;}
+  
+
+  .header .mid .realtime dl{margin: 0 15px;}
+  .header .mid .realtime dl dt{font-weight: 600; text-align: center; letter-spacing: 1.5px;}
+  .header .mid .realtime dl dd{text-align: center;}
+  .header .mid .realtime dl dd span{font-size: 14px; text-align: center; margin: 0 5px;}
+
+  .header .right #logout-btn{background:#001e26; color: #217085; border: 1px solid #217085; border-radius: 5px; margin-left: 15px;}
+  .header .right .realtime-info img,
+  .header .right .realtime-info{width: 40px; margin-right: 15px;}
+
+    .header .right .dimmer{width: 100vw; height: 100vh; display: none; position: absolute; z-index: 99998;}
+    .header .right  #realtimeInfoWrap{background: #ffd11b;padding: 20px; border-radius: 5px; position: absolute; bottom: -255px; right: 390px; z-index: 99999; display: none; box-shadow: 0 0 5px #363636;}
+      .header .right  #realtimeInfoWrap::before{content:''; position: absolute; width: 0px;height: 0px; border-top:0; border-bottom:25px solid #ffd11b; border-right: 0px solid transparent; border-left: 30px solid  transparent;z-index: 99999; top:-15px; right: 0;}
+
+      .header .right  #realtimeInfoWrap dl{padding: 10px 0;}
+        .header .right  #realtimeInfoWrap dl dt{color: #333; font-size: 16px; padding-bottom: 10px; font-weight: 600;}
+          .header .right  #realtimeInfoWrap dl dd ul{display: flex;align-items: center;justify-content: flex-start; }
+            .header .right  #realtimeInfoWrap dl dd ul li:first-child{font-size: 23px; margin-right: 10px; color: #333; font-family: var(--num-font-light);}
+            .header .right  #realtimeInfoWrap dl dd ul li:last-child{font-size: 18px;font-family: var(--num-font-light);}
+  
+/* 3-3. gnb */
+.gnb{width: 100%; height: 50px;  background: #0c0c0c; display: none; padding: 0; position: absolute; top:85px; border-bottom: 1px solid #fff;}
+.gnb.active{display: block;}
+  .gnb ul{width: 100%; height: 100%; }
+    .gnb ul.parents li{width: 25%; position: relative;}
+    .gnb ul.parents > li.active::after{content:""; width: 25%; height: 5px; background: var(--theme-color);position: absolute; bottom: 0; z-index: 3; left: 37%;}
+
+      .gnb ul li a{color: #d4d4d4; cursor: pointer; font-size: 18px; text-align: center;}
+        .gnb ul.parents > li > a{display: inline-block; width: 100%; padding: 15px; position: relative;}
+          .gnb ul.parents > li > a > i{padding-right: 10px; }
+    
+    
+    .gnb .child{position: absolute; width: 100%; top:50px; left: 0; z-index: 999; background: #2b2b2b; vertical-align: top; display: none;} 
+    .gnb:hover .child{display: flex;} 
+    .gnb .child ul{width: 25%; height: 300px; padding-top: 15px;}
+    .gnb .child ul{border-right: 1px solid #0d1c20;}
+    .gnb .child ul:last-child{border-right: 0;}
+    .gnb .child ul li{padding: 15px 0; text-align: center;}
+    .gnb .child ul li a{color:#bebebe;}
+
+
+/* 3-4. container */
+#container{width: 100% !important; height: calc(100vh - 85px) !important; top: 85px; }
+.gnb.active+#container{top:145px; height: calc(100vh - 145px) !important; }
+.container-wrap{width: 100%; min-width: 1500px; height: 100%;}
+  .gnb.active+.container{top: 110px;}
+
+  .container h2{font-size: 18px; color: #fff;}
+  .container h3,
+  .container h4{font-size: 15px; color: #fff;}
+
+
+
+/*************************
+ 
+       4. each pages
+
+**************************/
+
+/* 4-1. signin */
+.signin{width: 100%; height: 100vh; justify-content: center;}
+  .signin::after{display:block; content: ""; position:absolute; width: 100%; height: 100vh; top:0; left:0; right:0; bottom:0; background: url(../public/img/login-bg2.jpg) no-repeat center; background-size: cover; z-index: -99; opacity: 0.8;}
+  
+  .signin .pannel{width: 500px; height:500px; padding: 50px; position: relative; background-color: unset; border: 0;}
+    .signin .pannel::after{ width: 500px; height:500px; display:block; content: ""; position:absolute;  background-color: #ffffff; z-index: -1; opacity: 0.7; top:0; left:0; border-radius: 15px;}
+
+
+  .signin h2{font-size: 70px; font-weight: 900; letter-spacing: 28px; padding-left: 25px;  color: #15b600; }
+
+  .signin .input-wrap{width: 300px;}
+    .signin .input-wrap input{background: #fff; color: #333; border: 1px solid #adadad;}
+    .signin .input-wrap input,
+    .signin .input-wrap .btn.login{width: 300px; height: 35px; border: 1px solid #6d6d6d; margin: 5px 0; border-radius: 5px; padding: 5px 10px;}
+    .signin .input-wrap .btn.login{border:0;}
+
+
+/* 4-2. main */ 
+.main{width: 100%; max-width: 100%;}
+ 
+  .main > div{height: 100%;}
+
+  .main .dashboard.pannel{min-width: unset !important;}
+   .main .dashboard.pannel .pannel-container{padding-top: 0;}
+  
+    /* 금일발전량 */
+    .main .profit-info{width:100%; height: 100%;}
+      .main .profit-info .dounut-wrap{margin-top: -20px;}
+    
+
+    /* 금일 예측 발전량 & 금일 예상 수익 */
+    .main .today-pannel{width:100%; height: 100%;}
+
+    .main .today-pannel .flex-center dl{width: 50%; padding-left: 30px;}
+      .main .today-pannel .flex-center dl dt{font-size: 16px; padding: 20px 0 40px;}
+      .main .today-pannel .flex-center dl dd{font-size: 45px; font-family: var(--num-font-light);}
+
+    .main .today-pannel .line-chart{height: 300px; padding-top: 50px;}
+
+    /* 내 발전소 상태 */
+    .main .myplant-status{width: 100%; height: 100%;}
+
+      /* 장비 상태 카운터 */
+      .main .myplant-status .counting dl{width: 80px;}
+        .main .myplant-status .counting dl dt{text-align: center; font-size: 16px; padding: 20px 0;}
+        .main .myplant-status .counting dl dd{width: 80px; height: 80px; border-radius: 50%;text-align: center;display: flex; align-items: center; justify-content: center; font-size: 20px; font-family: var(--num-font-medium);}
+
+      /* 징비 상태 흐름도 */
+      .main .myplant-status .equip-flow-wrap{padding: 30px 20px 50px;}    
+        .main .myplant-status .equip-flow-wrap .bg-area{width:100%; height: 400px; padding: 0; background: url('/img/equip-flow/equip-flow-wrap.svg') no-repeat center; position: relative;}    
+        .main .myplant-status .equip-flow-wrap .bg-area li{width: 180px;position: absolute; cursor: pointer;}
+
+          .main .myplant-status .equip-flow-wrap .bg-area li img{ width: 100%; visibility: hidden; }
+          .main .myplant-status .equip-flow-wrap .bg-area li.active img{ visibility: visible;}
+
+            .main .myplant-status .equip-flow-wrap .bg-area li:nth-child(1){width: 29.08011869436202%;bottom: 3%; left:2.67062314540059%;}
+            .main .myplant-status .equip-flow-wrap .bg-area li:nth-child(2){width: 19.8813056379822%;top: 3%; left:14.09495548961424%;}
+            .main .myplant-status .equip-flow-wrap .bg-area li:nth-child(3){width: 20.02967359050445%; bottom: 18.5%; left: 39.46587537091988%;}
+            .main .myplant-status .equip-flow-wrap .bg-area li:nth-child(4){width: 20.02967359050445%;top: -4px; right:15.72700296735905%;}
+            .main .myplant-status .equip-flow-wrap .bg-area li:nth-child(5){width: 19.73293768545994%;bottom: 5%; right:4.59940652818991%;}
+
+            .main .myplant-status .equip-flow-wrap .bg-area li .badge{ width: 25px;height: 25px; background: #ff2a5c; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--num-font-medium); position: absolute; top: 20px; right: 0; font-size: 12px;}
+              
+            .main .myplant-status .equip-flow-wrap .bg-area li:nth-child(1) .badge{left: 0; top:20px;}
+              .main .myplant-status .equip-flow-wrap .bg-area li:nth-child(4) .badge{top:5px; right: 10px;}
+              .main .myplant-status .equip-flow-wrap .bg-area li:nth-child(5) .badge{top:10px;}
+              
+
+      /* 징비 상태 요약 */
+      .main .myplant-status h5{font-size: 18px; text-align: center; padding-top: 30px;}
+        .main .myplant-status h5 em{font-size: 18px;font-weight: bold;}
+
+    /* 현재 날씨 */
+    .main .now-weather{width: 100%; height: 100%;}
+
+      .main .now-weather .search-select{padding-bottom: 20px;}
+      
+      .main .now-weather .weather-info dt{width: 100%; padding-bottom: 15px;}
+      .main .now-weather .weather-info dd{justify-content: space-between;}
+
+        .main .now-weather .weather-info .celsius{justify-content: flex-start;}
+          .main .now-weather .weather-info .celsius li:first-child{padding-right: 10px;}
+          .main .now-weather .weather-info .celsius li:last-child{font-size: 50px;}
+            .main .now-weather .weather-info .celsius li:last-child em{font-size: 40px;}
+
+        .main .now-weather .weather-info .weather-desc{text-align: right;}
+          .main .now-weather .weather-info .weather-desc li span{padding-left: 10px;}
+
+      .main .now-weather .weather-info .time-line{padding: 30px 0;}
+        .main .now-weather .weather-info .time-line dl{text-align: center;}
+         .main .now-weather .weather-info .time-line dl dd ul li:first-child{padding: 10px 0;}
+         .main .now-weather .weather-info .time-line dl dd ul li:last-child{font-family: var(--num-font-light);}
+
+    /* 미세먼지 */
+    .main .dust-info{background: #2a57ff; padding: 30px 0; border-radius: 15px;}
+      .main .dust-info dl dt{padding-right: 10px;}
+
+    /* 현재시간 */
+    .main .now-time{position: absolute; right:20px; bottom:20px;}
+      .main .now-time dl dt,
+      .main .now-time dl dd{display: flex; align-items: center; justify-content: space-between;}
+        .main .now-time dl dt time,
+        .main .now-time dl dd time{letter-spacing: 1px;}
+
+      .main .now-time dl dt,
+      .main .now-time dl dt time{font-family: var(--num-font-light); font-size: 20px;}
+      
+      .main .now-time dl dd{padding-top: 30px;}
+      .main .now-time dl dd time{font-family: var(--num-font-light); font-size: 40px;}
+        .main .now-time dl dd time:first-child{font-size: 30px;}
+
+
+/* 4-3. /info/power  : 발전정보 */ 
+  .info-power{width: 100%;}
+  
+  /* 금일 발전량 요약 정보 */
+  .info-power .today-power-summary{background: #2A57FF;}
+    .info-power .today-power-summary .contents-wrap{width: 100%; height: 100%; padding:20px; display: flex; flex-direction: column; justify-content: space-between;}
+      
+      .info-power .today-power-summary .contents-wrap dl{display: flex; align-items: center; justify-content: space-between;;}
+        .info-power .today-power-summary .contents-wrap dl dt{position: relative; padding-left:60px; font-size: 16px;}
+          .info-power .today-power-summary .contents-wrap dl dt::before{content: ''; display: inline-block; position: absolute; width: 40px; height: 40px; top: 50%; left: 0; top:-10px; background: url(/img/icon/power-icon01.svg) no-repeat center;} 
+
+          .info-power .today-power-summary .contents-wrap dl:nth-child(2) dt::before{background: url(/img/icon/power-icon02.svg) no-repeat center;} 
+          .info-power .today-power-summary .contents-wrap dl:nth-child(3) dt::before{background: url(/img/icon/power-icon03.svg) no-repeat center;} 
+          .info-power .today-power-summary .contents-wrap dl:nth-child(4) dt::before{background: url(/img/icon/power-icon04.svg) no-repeat center;} 
+   
+        .info-power .today-power-summary .contents-wrap dl dd{display: flex; align-items: center;justify-content: flex-end;}
+        .info-power .today-power-summary .contents-wrap dl dd em,
+        .info-power .today-power-summary .contents-wrap dl dd em *{font-family: var(--num-font-medium); font-size:25px !important;}
+
+    
+
+   /* 금일 인버터별 발전량 요약 정보 */   
+  .info-power .today-inverter-power-summary{width: 100%;}
+    .info-power .today-inverter-power-summary .contents-wrap{width: 100%;}
+
+      .info-power .today-inverter-power-summary .contents-wrap div dl{width: 33.3333333333%; position: relative; display: flex; flex-direction: column; align-items: center; }
+        .info-power .today-inverter-power-summary .contents-wrap div dl::after{content: ''; display: inline-block;width: 1px; height: 100%; background: #fff;position: absolute;top: 0;right: 0;}
+        .info-power .today-inverter-power-summary .contents-wrap div dl:last-child::after{display: none;}
+
+          .info-power .today-inverter-power-summary .contents-wrap div dl dt,
+          .info-power .today-inverter-power-summary .contents-wrap div dl dd{width: 100%; text-align: left;padding-left: 22.22222222222222%;}
+            .info-power .today-inverter-power-summary .contents-wrap div dl dt{padding-bottom: 10px;}
+            .info-power .today-inverter-power-summary .contents-wrap div dl dd em{font-family: var(--num-font-light); font-size:25px;}
+
+      
+      .info-power .today-inverter-power-summary .contents-wrap .bar-chart{width: 100%; margin-top: 30px;padding: 20px;}
+        .info-power .today-inverter-power-summary .contents-wrap .bar-chart li{padding: 20px 0;}
+        
+
+/*******************************************************
+
+    4-4. /info/profit  : 수익정보
+
+      + info-profit
+        - today-profit-summary : 금일 수익 요약 정보
+        - today-rec-info : 현재 REC 단가
+        - today-smp-info : 현재 SMP 단가
+        - smp-profit-info : SMP 수익금
+        - rec-trade-info : REC 거래 정보
+        - rec-profit-info : REC 수익금
+
+********************************************************/ 
+
+.info-profit{width: 100%;}
+
+  /* 금일 수익 요약 정보 */
+  .info-profit .today-profit-summary{width: 100%; background: #2A57FF;}
+    .info-profit .today-profit-summary .pannel-container{padding-top: 0;}
+      .info-profit .today-profit-summary .contents-wrap{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; gap: 20px;}
+      
+      .info-profit .today-profit-summary .contents-wrap dl{display: flex; align-items: center; justify-content: space-between;}
+        .info-profit .today-profit-summary .contents-wrap dl dt{position: relative; padding-left:50px; font-size: 16px;}
+          .info-profit .today-profit-summary .contents-wrap dl dt::before{content: ''; display: inline-block; position: absolute; width: 25px; height: 40px; top: 50%; left: 0; top:-10px; background: url(/img/icon/profit-accumulate.svg) no-repeat center ;} 
+
+          .info-profit .today-profit-summary .contents-wrap dl:nth-child(2) dt::before{background: url(/img/icon/profit-prediction.svg) no-repeat center;} 
+
+        .info-profit .today-profit-summary .contents-wrap dl dd{display: flex; align-items: center;justify-content: flex-end;}
+        .info-profit .today-profit-summary .contents-wrap dl dd em,
+        .info-profit .today-profit-summary .contents-wrap dl dd em *{font-family: var(--num-font-medium); font-size:25px !important;}
+
+
+
+    /* 현재 REC 단가 */
+    .info-profit .today-rec-info{width: 100%;}
+      .info-profit .today-rec-info .now{flex-direction: row-reverse;}
+        .info-profit .today-rec-info .now dt em{ font-family: var(--num-font-medium); font-size: 25px !important;}
+        .info-profit .today-rec-info .now dd{color: red;}
+     
+      .info-profit .today-rec-info .now-detail{width: 100%; padding: 50px 0;}
+        .info-profit .today-rec-info .now-detail li{width: 33.33333333333%; position: relative; display: flex; align-items: center; justify-content: center;}
+          .info-profit .today-rec-info .now-detail li::after{width:1px; height: 100%; background: #808080; content: ''; display: inline-block; position: absolute; right: 0; top: 0;}
+            .info-profit .today-rec-info .now-detail li:last-child::after{display: none;}
+
+          .info-profit .today-rec-info .now-detail dl dd{padding-top: 10px;}
+            .info-profit .today-rec-info .now-detail dl dd em{font-size: 25px;font-family: var(--num-font-light); }
+
+      .info-profit .today-rec-info .rec-history{width: 100%;}
+         .info-profit .today-rec-info .rec-history table{width: 100%;}
+ 
+          .info-profit .today-rec-info .rec-history table thead{position: relative;}
+            .info-profit .today-rec-info .rec-history table thead::after{ content: '';width: 100%; height: 1px; background: #808080; position: absolute; display: inline-block; left: 0; bottom: 0;}
+             .info-profit .today-rec-info .rec-history table thead:last-child::after{display: none;}
+
+          .info-profit .today-rec-info .rec-history table thead th,
+          .info-profit .today-rec-info .rec-history table tr td{width: 33.3333333333%; text-align: center; vertical-align: middle; padding: 10px; position: relative;}
+    
+            .info-profit .today-rec-info .rec-history table thead th::after,
+            .info-profit .today-rec-info .rec-history table tr td::after{ content: '';width: 1px; height: calc(100% + 2px); background: #494949;position: absolute; display: inline-block; right: 0; top: 0;}
+              .info-profit .today-rec-info .rec-history table thead th:last-child::after,
+              .info-profit .today-rec-info .rec-history table tr td:last-child::after{display: none;}
+
+
+
+    /* 현재 SMP 단가 */
+    .info-profit .today-smp-info{width: 100%;;}
+      .info-profit .today-smp-info .now{flex-direction: row-reverse;}
+        .info-profit .today-smp-info .now dt em{ font-family: var(--num-font-medium); font-size: 25px !important;}
+        .info-profit .today-smp-info .now dd{color: red;}
+      
+        .info-profit .today-smp-info .now-detail{width: 100%; padding-top: 50px;}
+        .info-profit .today-smp-info .now-detail li{width: 33.33333333333%; position: relative; display: flex; align-items: center; justify-content: center;}
+          .info-profit .today-smp-info .now-detail li::after{width:1px; height: 100%; background: #808080; content: ''; display: inline-block; position: absolute; right: 0; top: 0;}
+            .info-profit .today-smp-info .now-detail li:last-child::after{display: none;}
+
+          .info-profit .today-smp-info .now-detail dl dd{padding-top: 10px;}
+            .info-profit .today-smp-info .now-detail dl dd em{font-size: 25px;font-family: var(--num-font-light); }
+
+    /* SMP 수익금 */
+    .info-profit .smp-profit-info{width: 100%;}
+      .info-profit .smp-profit-info .pannel-container{padding-top: 0; position: relative;}
+        .info-profit .smp-profit-info .pannel-container .data-table-wrap{position: absolute; top:0; left: 0; right: 0; height: calc(100% - 165px);}
+          .info-profit .smp-profit-info .pannel-container .data-table-wrap #smpProfitInfo{margin-top: 10px;}
+    
+        .info-profit .smp-profit-info .pannel-container .summary{position: absolute; width: calc(100% - 10px); height: 160px; bottom: 5px; left: 5px; right: 5px; padding: 0 100px;   background: #333;z-index: 99;}
+          .info-profit .smp-profit-info .pannel-container .summary li{padding: 10px 0;}
+            .info-profit .smp-profit-info .pannel-container .summary dl{display: flex; align-items: center; justify-content: space-between;}
+
+ 
+    /* REC 거래 정보 */
+    .info-profit .rec-trade-info{width: 100%;}
+      .info-profit .rec-trade-info .pannel-container{padding-top: 0;}
+
+      .info-profit .rec-trade-info dl{width: 100%;}
+      .info-profit .rec-trade-info dl:first-child{padding-bottom: 50px;}
+        .info-profit .rec-trade-info dl dd{text-align: center;}
+        .info-profit .rec-trade-info dl dd:nth-child(2) *,
+        .info-profit .rec-trade-info dl dd:nth-child(2){font-size: 35px; padding: 20px 0;}
+
+    
+    /* REC 수익금 */
+    .info-profit .rec-profit-info{width: 100%;;}
+    

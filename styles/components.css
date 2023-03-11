@@ -1,0 +1,343 @@
+@import url("./resource.css");
+
+/** Button Components **/
+
+  /* Button Wrap */
+    .btn-wrap{ width: 100%; padding: 50px 0; display:flex; align-items: center; justify-content:center;text-align: center;}
+      .btn-wrap .btn:nth-child(2){margin: 0 10px;}
+
+  /* Button Group */
+    .btn-group{justify-content: right;}
+    .btn-group .btn{width: 100px; margin: 5px;}
+
+  /* Basic Button Reset */
+    .btn{display: block; line-height: 0; padding: 17px; text-align:center; transition: all 300ms ease; color: #FFF; font-family: "Roboto", sans-serif; border: 0; border-radius: 5px; min-width: 50px !important;}
+    .btn.default{background: #b4b4b4 ;}
+    .btn.rectangle{border-radius: 0!important;}
+    a.btn{color: #FFF!important;}
+    .btn *{color: #FFF!important; font-size: 14px;}
+
+  /* Button Groups Style */
+   
+    /* + Confirm Button Group*/
+    .btn.ok-btn{background: #6490f4;}
+    .btn.cancel-btn{background: #f46486;}
+
+    .btn.ok-btn:hover{background: #3f6fdf;}
+    .btn.cancel-btn:hover{background: #d6375c;}
+
+    /* + CRUD Button Group*/
+    .btn.crud-btn{background: #26d68d;}
+    .btn.close-btn{background:#fff; border: 1px solid #26d68d; color: #26d68d !important;}
+    .btn.del-btn{background:#f46486;}
+
+    .btn.crud-btn:hover{background: #1db676;}
+    .btn.close-btn:hover{background:#26d68d; color: #fff !important;}
+    .btn.del-btn:hover{background: #d6375c;}
+    
+    /* 
+      .btn.search-btn{background:;}
+      .btn.add-btn{background:;}
+      .btn.view-btn{background:;}
+      .btn.mod-btn{background:;}
+      .btn.del-btn{background:;}
+    */
+    
+    /* + Login Button Group*/
+    .btn.login-btn{background:#26d68d; border:0;width: 300px; height: 35px; margin: 5px 0; border-radius: 0; padding: 5px 10px;}
+    .btn.admin-login-btn{background: #09995d; border:0;width: 300px; height: 35px; margin: 5px 0; border-radius: 0; padding: 5px 10px;}
+    .btn.logout-btn{background: var(--default-wrap-bg-color); border: 1px solid var(--theme-color ); margin-left: 10px; border-radius: 10px;}
+      .btn.logout-btn *{color: var( --theme-color ) !important; font-weight: 500; font-size: 13px;}
+    .btn.find-pw-btn{background: transparent; margin-top: 5px;}
+      .btn.find-pw-btn *{color: #26d68d !important;text-decoration: underline; font-size: 13px; letter-spacing: 2px;}
+
+
+    .btn.login-btn:hover{background: #1db676;}
+    .btn.admin-login-btn:hover{background: #0a6942;}
+    .btn.logout-btn:hover{background:#26d68d;}
+      .btn.logout-btn:hover *{color: #fff !important;}
+    .btn.find-pw-btn:hover{background: #26d68d;}
+      .btn.find-pw-btn *:hover{color: #fff !important; text-decoration: none;}
+
+    /* + Work Button Group*/
+    .btn.start-btn{background:#6490F4;}
+    .btn.end-btn{background:#3015A6;} 
+    .btn.confirm-btn{background:#F46486;}
+    .btn.more-view-btn{background:#f48664;}
+
+    .btn.start-btn:hover{background:#3e69cc;}
+    .btn.end-btn:hover{background:#160758;} 
+    .btn.confirm-btn:hover{background:#d6375c;}
+    .btn.more-view-btn:hover{background:#ca5c3a;}
+
+    /* + Icon Button Group*/
+    .btn.add-icon{color: #fff;}
+    .btn.info-icon, .info-icon{width: 20px; height:20px;}
+
+    /* + Custom Button Group */
+    .find-addr-btn{background: #0cbc80 !important;}
+    .file-upload-btn{background: #0c93bc !important;}
+
+
+
+/** Input Components **/
+
+  /* Basic Text Input Group */
+  .default-text-input{width: 100%; background: var( --default-wrap-bg-color );}
+    .default-text-input .MuiInput-underline:after{border-color: #0cbc80;}
+    
+  /* Place holder + Top Label*/
+  .MuiFormLabel-root{color: #e1e1e1 !important;}
+  .MuiFormLabel-root.Mui-focused{color: #0cbc80 !important;}
+
+
+  /* Search text Input */
+  .search-input-wrap{min-width: 250px; position: relative; display: flex; align-items: center; }
+    .search-input-wrap .search-input{width: 100%; background: var( --default-wrap-bg-color ); height: 35px; color: #fff; padding-left: 20px;}
+    .search-input-wrap .search-icon{color: #fff; position: absolute; right: 0;}
+    
+  /* CheckBox Input Group */
+  input[type="checkbox"] {top: 0; left: 0; width: 100%; cursor: inherit; height: 100%; margin: 0; opacity: 0; padding: 0; z-index: 1; position: absolute;}
+  .MuiCheckbox-colorSecondary.Mui-checked{color: #0cbc80 !important;}
+  .MuiFormLabel-root.Mui-error { color: #f44336 !important;}
+    .MuiIconButton-colorSecondary:hover,
+    .MuiCheckbox-colorSecondary.Mui-checked:hover{background-color: rgb(12, 188, 128, 0.04) !important;}
+
+
+
+
+/** Switch Components **/
+  
+  /* Basic Switch */
+  .MuiSwitch-switchBase{color: #aaaaaa !important;}
+  .MuiSwitch-track{background: #b7b7b7 !important;}
+
+/************************ 
+  
+        MOLECULES 
+      
+*************************/
+
+/* Middle Title */
+.middle-title{font-weight: 500; color: #333 !important; position: relative;margin-bottom:20px;display: flex; align-items: center;}
+  .middle-title .btn{margin-left: 10px;}
+
+  h4.middle-title{position: relative; font-size: 20px !important; font-weight: 500;}
+    h4.first{margin-top: 0;}
+    h4.first::before{display: none;}
+
+  h5.middle-title{position: relative; font-size: 20px !important; font-weight: 500;}
+    
+
+
+/* Input Wrap */
+.input-wrap{width: 100%; display: flex; align-items:  flex-end; justify-content: flex-start; margin:0;}
+.input-wrap.text{margin-bottom: 35px;}
+
+.filter h4+.input-wrap{margin-top: 0;}
+  .input-wrap dt.input-wrap-title{width:20%; font-size: 16px; font-weight: 500; padding:0 20px 5px 0; }
+  .input-wrap dd.input-wrap-cont{width: 80%; display: flex; align-items: flex-end; justify-content: flex-start;}
+  
+  .input-wrap .default-text-input{margin-right: 20px;}
+  
+  .input-wrap.chkbox,
+  .input-wrap.chkbox dd.input-wrap-cont{align-items: center;}
+
+    .input-wrap.chkbox dd.input-wrap-cont > label{width: 25%; margin-right: 0;}
+
+
+/* Bread Scrumb */
+.bread-scrumb{display: flex; align-items: center; position: relative; padding:30px; }
+  .bread-scrumb > div{display: flex; align-items: center; position: relative;}
+    .bread-scrumb, .bread-scrumb span{color: #333; font-weight: 500; font-size: 17px;}
+  
+    .bread-scrumb::after{display: block; content: ''; width: calc(100% - 60px); height: 1px; position: absolute; background: #0cbc80; bottom: 0; left: 30px;}
+
+/* Chip */
+ 
+
+
+/************************ 
+  
+        OrganismS 
+      
+*************************/
+
+/** Pannel Organism **/
+
+  /* Pannel Default */
+  .pannel{background: #fff; border-radius: 5px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);}
+
+  .pannel{background: var( --default-wrap-bg-color ); color: #fff; height: 100%; position: relative; }
+
+  .pannel-header{width:100%; height:45px; padding: 10px 15px; border-bottom:1px solid #0e3641; position: absolute; z-index: 99; top:0;left: 0;  border-top-left-radius: 15px;  border-top-right-radius: 15px;}
+  .pannel-container{padding: 10px; width:100%; height:calc(100% - 60px); position: absolute; top:60px;overflow-y: auto;}
+
+
+  /* DashBoard Pannel */
+  .dashboard.pannel{width: 100%;}
+    .dashboard.pannel .pannel-title{width: 100%; font-weight: 500; font-size: 16px; margin: 0; padding: 20px; display: flex; align-items:center; justify-content: space-between; position: absolute; z-index: 9999;}
+    .dashboard.pannel .pannel-title > *{font-weight: 500; font-size: 16px; color: #fff;}
+    .dashboard.pannel .pannel-title > *:nth-child(2){font-weight: 400; font-size: 13px;}
+
+    .dashboard.pannel .pannel-container{width: 100%; padding: 20px; }
+  
+
+
+/** filter Organism **/
+.filter{width: 100%; min-height: 150px;border:1px solid #26b077; padding: 20px 50px; margin: 20px 0; position: relative;}
+  .filter .flex-center{justify-content: flex-start;}
+
+    .filter .title{font-size: 18px; font-weight: 400; background-color: #fff; position: absolute; top:-13px; left: 80px; margin-left: -60px;  padding:0 20px; z-index: 99; text-align: center; color: #747474 !important;}
+  
+    .filter input[type="text"]{width:100%;}
+
+
+  /* filter - option one line */
+  .filter.option-one-line{height: 120px;}
+          
+  /* filter - datepicker wrap */
+  .date-picker-wrap{justify-content: flex-end;}
+    .date-picker-wrap .react-datepicker-wrapper{width: 220px !important; margin-right: 10px;}
+      .date-picker-wrap .react-datepicker-wrapper input:focus,
+      .date-picker-wrap .react-datepicker-wrapper input:active,
+      .date-picker-wrap .react-datepicker-wrapper input{width: 220px; padding-left: 25px; color: #fff; margin:0 ;}
+
+    .date-picker-wrap .btn-date-group{width: 250px; height: 100%; display: flex;align-items: center; justify-content: flex-end; gap:10px;}
+    .date-picker-wrap .btn-date-group li:first-child .btn{width: 70px;}
+      .date-picker-wrap .btn-date-group .btn{ height: 37px; line-height: 1.1; background:#292828 !important;}
+      .date-picker-wrap .btn-date-group .btn.active{background: #0cbc80 !important;}
+    
+
+
+/** Page Header Organism **/
+.page-header{padding: 15px 30px;}
+  .page-header h3{margin: 30px 0 0 !important;}
+
+
+  
+/** Modal Organism **/
+.customer-info-modal,
+.customer-info-modal>.icon:first-child+*,
+.customer-info-modal>:first-child:not(.icon){border-radius: 0 !important;}
+
+  .customer-info-modal>.header,
+  .customer-info-modal>.actions{border: 0 !important; background: #fff !important;}
+
+
+
+/** Stepper Organism **/
+  .MuiStepIcon-root.MuiStepIcon-completed,
+  .MuiStepIcon-root.MuiStepIcon-active{color:#0cbc80 !important;}
+  .MuiStepLabel-label.MuiStepLabel-active{color:#0cbc80 !important; font-weight: 700 !important;}
+
+
+
+/** Slider Organism **/
+.slick img:focus-visible{outline: 0; }
+
+  /* Slider - ThumbNail Slide */
+
+  .thumbnail-slide.slick-slider .slick-list .slick-slide {overflow: hidden; height: 420px; padding: 0;}
+
+  /* Slider - Pager Slide */
+  .pager-slide.slick-slider .slick-list .slick-slide {overflow: hidden; height: 150px; padding: 0 10px;}
+
+
+  
+
+/** Card Organism **/
+.card{display: flex; flex-direction: column; align-items: center; background: #fff; border-radius: 15px; border:1px solid #bbbbbb; padding: 15px 0;}
+  .card-header,
+  .card-container, 
+  .card-footer{width:100%} 
+
+  .card-header h3{font-weight: 600;}
+
+  .card-container{padding: 15px 0;} 
+
+.summary-card{width: 230px;}
+  .summary-card .MuiTypography-body1,
+  .summary-card .MuiTypography-h3{text-align: center;}
+
+
+
+
+/** File Upload Organism **/
+.file-upload-wrap{width: 100%; display: flex; align-items: center; justify-content: center;}
+  .file-upload-wrap input[type="file"] { appearance: none; background-color: initial; cursor: default; align-items: baseline; color: inherit; text-overflow: ellipsis; white-space: pre; text-align: start !important; padding: initial; border: initial; overflow: hidden !important;}
+  .file-upload-wrap .drag-area{border: 1px solid #3869b5 ; cursor:pointer; padding: 100px 150px; border-radius: 5px;}
+
+
+
+/** DataTable Organism **/
+.MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within, .MuiDataGrid-root .MuiDataGrid-cell:focus-within,
+.MuiDataGrid-root .MuiDataGrid-columnHeader:focus, .MuiDataGrid-root .MuiDataGrid-cell:focus {outline: 0 !important;}
+.MuiDataGrid-root .MuiDataGrid-columnHeader, .MuiDataGrid-root .MuiDataGrid-cell{padding: 0 2.5px !important;}
+.MuiDataGrid-columnHeader--sortable .MuiDataGrid-columnHeader,
+.MuiDataGrid-root .MuiDataGrid-columnHeader{justify-content: center !important;}
+.id-col .MuiDataGrid-menuIcon{display: none !important;}
+
+/** CandleGauge Organism **/
+.candle-gauge, .candle-gauge-wrap{width: 100%; position: relative;}
+.candle-gauge span{display: inline-block; }
+  .candle-gauge .candle-gauge-wrap span,
+  .candle-gauge .candle-gauge-wrap span img{width: 40px;}
+  
+  .candle-gauge .candle-gauge-wrap ul{width: 100%; border-radius: 20px; overflow: hidden; margin: 0 10px;}
+  .candle-gauge .candle-gauge-wrap ul li{width: 20%; text-align: center;font-size: 15px; padding: 10px 0;}
+  .candle-gauge .candle-gauge-wrap ul li:nth-child(1){background:#ff2a5c;}
+  .candle-gauge .candle-gauge-wrap ul li:nth-child(2){background:#ff8c1b;}
+  .candle-gauge .candle-gauge-wrap ul li:nth-child(3){background:#ffd11b;}
+  .candle-gauge .candle-gauge-wrap ul li:nth-child(4){background:#8dd100;}
+  .candle-gauge .candle-gauge-wrap ul li:nth-child(5){background:#0cbc80;}
+
+  .candle-gauge .pointer{width: 50px; position: absolute; left: 161px; bottom:-10px;}
+
+  
+/** Search Select **/
+  /* Search Select Organism */
+  .search-select .css-g1d714-ValueContainer,
+  .search-select .css-1hb7zxy-IndicatorsContainer{background: #333; border: 0;}
+
+    .search-select .css-yk16xz-control{background:#333; border: 0;}
+    .search-select .css-1pahdxg-control,
+    .search-select .css-1pahdxg-control:hover{box-shadow: none; border: 0; background: #333;}
+
+    .search-select .css-26l3qy-menu,
+    .search-select .css-26l3qy-menu *{background: #333;}
+    .search-select .css-26l3qy-menu * > *:hover{background: #444;}
+    
+    .css-1uccc91-singleValue,
+    .css-1uccc91-singleValue *{color: #c2c2c2 !important;}
+
+    .search-select .css-1rhbuit-multiValue{background-color: #0cbc80; border-radius: 15px; padding-left: 5px;}
+    .search-select .css-1rhbuit-multiValue *{color: #fff;}
+
+  /* PlantSearchBar Organism */
+  .gen-search{width:100%}
+    .gen-search .plant-search__control{border-radius: 30px; overflow: hidden;}
+   .plant-search__menu{background: #fff !important;}
+
+
+
+
+/** Chart Organism **/
+
+  /* Dounut Chart Organism */
+  .dounut{position: relative;}
+    .dounut > span{position: absolute; color: #fff;}
+    .dounut > span.value{font-size: 35px;}
+    .dounut > span.label{bottom: 0; font-size: 16px;}
+  
+
+  /* Horizon Bart Chart Organism */
+  .hoz-bar-chart{width: 100%;}
+    .hoz-bar-chart dt,
+    .hoz-bar-chart dd{width: 100%; text-align: left;}
+    
+      .hoz-bar-chart dt{padding-bottom: 10px;}
+      .hoz-bar-chart dd{ height: 50px; background-color: #fff; position: relative; border-radius: 30px;overflow: hidden;}
+        .hoz-bar-chart dd span{display: inline-block; width: 10%; height: 100%;  background-color: #0CBA7F; position: absolute; left: 0;top: 0; text-indent: -99999999px;}
+
+
