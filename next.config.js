@@ -1,9 +1,9 @@
 // next.config.mjs
 
-const nextConfig = {
-  /* config options here */
-  basePath: "eeuneeun.github.io",
-};
+// const nextConfig = {
+//   /* config options here */
+//   basePath: "/eeuneeun.github.io/portfolio",
+// };
 
-// export default nextConfig;
-module.exports = nextConfig;
+// // export default nextConfig;
+// module.exports = nextConfig;

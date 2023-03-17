@@ -1,60 +1,60 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>WONEUNJAE</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <header>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          <a href="/">EUN</a>
         </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <ul>
+          <li>
+            <a href="/">HOME</a>
+          </li>
+          <li>
+            <a href="#profile">PROFILE</a>
+          </li>
+          <li>
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="#sns">SNS</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <div id="main" className="main">
+          <h2>WE CREATE A CONCEPT INTO THE MARKET</h2>
+          Welcome to Made
+        </div>
+        <div id="profile" className="profile">
+          <h2>PROFILE</h2>
+        </div>
+        <div id="portfolio" className="portfolio">
+          <h2>PORTFOLIO</h2>
+        </div>
+        <div id="sns" className="sns">
+          <h2>SNS</h2>
+        </div>
+        <div id="contact" className="contact">
+          <h2>CONTACT</h2>
         </div>
       </main>
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
+          href="https://eeuneeun.github.io/portfolio/"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          &copy; all copyright reserved
           <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
@@ -205,5 +205,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
