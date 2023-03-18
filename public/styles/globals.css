@@ -4,7 +4,7 @@
 ***********************/
 
 /* 1-1. font */
-
+/* 
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
@@ -19,7 +19,7 @@
   font-style: normal;
 }
 
-
+ */
 
 
 /* 1-2. reset items */
@@ -134,9 +134,6 @@ body{ -ms-overflow-style: none; }
 
 /* 3-2. container */
 .container-wrap{width: 100%; height: calc(100vh - 75px); position: fixed; top: 75px; overflow: auto;}
-  /* .container-wrap .container{;} */
-  
-  
 
 /* 3-3. arccordion */
 .arccordion{width: 100%;}

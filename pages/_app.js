@@ -4,22 +4,18 @@ import React, { useState, useEffect } from "react";
 /* NEXT JS */
 import Head from "next/head";
 
-/* REDUX */
+// * 상수 선언부 */
+const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
+const GOOGLE_API = process.env.NEXT_PUBLIC_GOOGLE_API;
 
 /* CSS */
-import "../styles/components.css";
-import "../styles/templates.css";
-import "../styles/globals.css";
+import "../public/styles/components.css";
+import "../public/styles/templates.css";
+import "../public/styles/globals.css";
 
 /* LAYOUT */
 import Header from "../components/layout/Header.js";
 import Gnb from "../components/layout/Gnb.js";
-
-/* FUNCTION */
-
-// * 상수 선언부 */
-const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
-const GOOGLE_API = process.env.NEXT_PUBLIC_GOOGLE_API;
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
