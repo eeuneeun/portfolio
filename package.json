@@ -1,11 +1,12 @@
 {
   "private": true,
+  "homepage": "http://eeuneeun.github.io/portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build && next export",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "deploy": "npm run predeploy && touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "latest",

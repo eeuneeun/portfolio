@@ -5,8 +5,8 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
 // * 상수 선언부 */
-const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
-const GOOGLE_API = process.env.NEXT_PUBLIC_GOOGLE_API;
+import { PortfolioProvider } from "../config/context";
+import { prefix } from "../config/config";
 
 /* CSS */
 import "../public/styles/components.css";
@@ -24,21 +24,23 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Head>
-        <title>WONEUNJAE</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="#" />
-      </Head>
+      <PortfolioProvider value={{ prefix }}>
+        <Head>
+          <title>WONEUNJAE</title>
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="#" />
+        </Head>
 
-      <div id="page" className="wrap">
-        <Header {...pageProps} />
-        <Gnb {...pageProps} />
-        <div className="container-wrap">
-          <div className="container">
-            <Component {...pageProps} />
+        <div id="page" className="wrap">
+          <Header {...pageProps} />
+          <Gnb {...pageProps} />
+          <div className="container-wrap">
+            <div className="container">
+              <Component {...pageProps} />
+            </div>
           </div>
         </div>
-      </div>
+      </PortfolioProvider>
     </>
   );
 }
