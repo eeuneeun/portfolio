@@ -55,9 +55,9 @@ export default function Home() {
             </article>
           </div>
         </div>
-        <div id="portfolio" className="portfolio">
+        <div id="portfolio" className="portfolio flex-between">
+          <h2>PORTFOLIO</h2>
           <div className="inner">
-            <h2>PORTFOLIO</h2>
             <article>
               <ul className="portfolio-list flex-start">
                 <li>
@@ -74,6 +74,19 @@ export default function Home() {
                       />
                     </a>
                   </Link>
+
+                  <dl>
+                    <dt>대한주택관리사협회</dt>
+                    <dd>작업기간 : 2015.05 ~ 2015.12</dd>
+                    <dd>
+                      사용기술 :<span className="label">java</span>
+                      <span className="label">mssql</span>
+                      <span className="label">html5</span>
+                      <span className="label">css3</span>
+                      <span className="label">Javascript</span>
+                      <span className="label">photoshop</span>
+                    </dd>
+                  </dl>
                 </li>
                 <li>
                   <Link
@@ -89,6 +102,17 @@ export default function Home() {
                       />
                     </a>
                   </Link>
+
+                  <dl>
+                    <dt>코인빗 랜딩 페이지</dt>
+                    <dd>작업기간 : 2018.05 ~ 2015.12</dd>
+                    <dd>
+                      사용기술 :<span className="label">html5</span>
+                      <span className="label">css3</span>
+                      <span className="label">Javascript</span>
+                      <span className="label">photoshop</span>
+                    </dd>
+                  </dl>
                 </li>
                 <li>
                   <Link
@@ -104,6 +128,16 @@ export default function Home() {
                       />
                     </a>
                   </Link>
+                  <dl>
+                    <dt>코인빗 거래소</dt>
+                    <dd>작업기간 : 2018.05 ~ 2015.12</dd>
+                    <dd>
+                      사용기술 :<span className="label">html5</span>
+                      <span className="label">css3</span>
+                      <span className="label">Javascript</span>
+                      <span className="label">JQuery</span>
+                    </dd>
+                  </dl>
                 </li>
                 <li>
                   <Link
@@ -116,6 +150,16 @@ export default function Home() {
                       <img src={`${prefix}/img/web04.png`} alt="롯데마트" />
                     </a>
                   </Link>
+                  <dl>
+                    <dt>롯데마트 웹 접근성</dt>
+                    <dd>작업기간 : 2018.05 ~ 2015.12</dd>
+                    <dd>
+                      사용기술 :<span className="label">html5</span>
+                      <span className="label">css3</span>
+                      <span className="label">Javascript</span>
+                      <span className="label">JQuery</span>
+                    </dd>
+                  </dl>
                 </li>
                 <li>
                   <Link
@@ -131,6 +175,17 @@ export default function Home() {
                       />
                     </a>
                   </Link>
+                  <dl>
+                    <dt>하나카드 현대해상 파이낸스 세이프보험</dt>
+                    <dd>작업기간 : 2018.05 ~ 2015.12</dd>
+                    <dd>
+                      사용기술 :<span className="label">html5</span>
+                      <span className="label">css3</span>
+                      <span className="label">Javascript</span>
+                      <span className="label">react js</span>
+                      <span className="label">Next js</span>
+                    </dd>
+                  </dl>
                 </li>
 
                 <li>
@@ -147,6 +202,20 @@ export default function Home() {
                       />
                     </a>
                   </Link>
+                  <dl>
+                    <dt>
+                      하나카드 현대해상 파이낸스 세이프보험 상담원용 관리자
+                      페이지
+                    </dt>
+                    <dd>작업기간 : 2018.05 ~ 2015.12</dd>
+                    <dd>
+                      사용기술 :<span className="label">html5</span>
+                      <span className="label">css3</span>
+                      <span className="label">Javascript</span>
+                      <span className="label">react js</span>
+                      <span className="label">Next js</span>
+                    </dd>
+                  </dl>
                 </li>
                 <li>
                   <Link
@@ -162,6 +231,15 @@ export default function Home() {
                       />
                     </a>
                   </Link>
+                  <dl>
+                    <dt>롯데렌터카 챗봇</dt>
+                    <dd>작업기간 : 2022.12 ~ 2023.2</dd>
+                    <dd>
+                      사용기술 :<span className="label">html5</span>
+                      <span className="label">css3</span>
+                      <span className="label">Javascript</span>
+                    </dd>
+                  </dl>
                 </li>
                 <li>
                   <Link
@@ -174,6 +252,18 @@ export default function Home() {
                       <img src={`${prefix}/img/web08.png`} alt="고궁박물관" />
                     </a>
                   </Link>
+                  <dl>
+                    <dt>고궁박물관</dt>
+                    <dd>작업기간 : 2022.10 ~ 2023.4</dd>
+                    <dd>
+                      사용기술 :<span className="label">html5</span>
+                      <span className="label">css3</span>
+                      <span className="label">Javascript</span>
+                      <span className="label">java</span>
+                      <span className="label">spring</span>
+                      <span className="label">mysql</span>
+                    </dd>
+                  </dl>
                 </li>
                 <li>
                   <Link

@@ -110,6 +110,7 @@ body{ -ms-overflow-style: none; }
 
 /* 2-2. custom default tag */
 .tag{color: #fff; font-size :12px; padding: 5px 8px; border-radius: 5px; display: inline-block; }
+.label{background: #0cbc80; color: #fff; font-size: 14px; display: inline-block; padding: 3px 12px 5px 12px; border-radius: 8px; margin: 0 5px;}
 
 /* 2-3. modal custom*/
 .ui.modal>.actions{text-align: center;}
@@ -202,10 +203,11 @@ main{width: 100%;}
   /* PORTFOLIO */
   /* main > .portfolio */
   .portfolio{width: 100%;}
-    .portfolio .inner{max-width: 1200px;}
+    .portfolio .inner{max-width: calc(100% - 300px); width: calc(100% - 300px); padding: 100px;}
+    .portfolio h2{width: 300px; height: 100%; padding:10px 0 30px 0; font-size: 40px; background: #000;}
 
-    .portfolio-list{width: 100%; gap: 10px; flex-flow: row wrap;}
-      .portfolio-list li{width: 30%;}
+    .portfolio-list{width: 100%; gap: 30px; flex-wrap: wrap; justify-content: center;}
+      .portfolio-list li{width: 30%; box-shadow: 1px 3px 10px #adadad; padding: 5px 5px 30px 5px;}
         .portfolio-list li a{width: 100%;}
           .portfolio-list li a img{width: 100%;}
 
