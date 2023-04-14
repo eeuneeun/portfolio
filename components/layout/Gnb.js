@@ -1,5 +1,6 @@
 /* React */
 import React, { useState, useEffect } from "react";
+import { prefix } from "../../config/config.js";
 
 /* Next JS */
 import Link from "next/link";
@@ -22,19 +23,19 @@ export default function Gnb(props) {
           </h1>
           <ul className="flex-start">
             <li>
-              <Link href="/">HOME</Link>
+              <Link href={`${prefix}/`}>HOME</Link>
             </li>
             <li>
-              <Link href="#profile">PROFILE</Link>
+              <Link href={`${prefix}/#profile`}>PROFILE</Link>
             </li>
             <li>
-              <Link href="#portfolio">PORTFOLIO</Link>
+              <Link href={`${prefix}/#portfolio`}>PORTFOLIO</Link>
             </li>
             <li>
-              <Link href="#sns">SNS</Link>
+              <Link href={`${prefix}/#sns`}>SNS</Link>
             </li>
             <li>
-              <Link href="#contact">CONTACT</Link>
+              <Link href={`${prefix}/#contact`}>CONTACT</Link>
             </li>
           </ul>
         </div>
