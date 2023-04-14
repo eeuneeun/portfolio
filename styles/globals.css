@@ -200,6 +200,33 @@ main{width: 100%;}
   /* PROFILE */
   /* main > .profile */
   .profile{width: 100%;}
+    .profile .inner{height: 100%; padding: 20px 0;}
+    .profile h2{font-size: 40px;}
+    .profile article{width: 50%; height: 100%;}
+    
+    /* gallery */
+    .profile .gallery-wrap{width: 100%; height: 100%; padding: 50px 0; display: flex; align-items: center; justify-content: center;}
+    
+    .profile .gallery-list{width: 100%; flex-wrap: wrap;}
+      .profile .gallery li{width: 20%; max-height: 116px;overflow: hidden;}
+        .profile .gallery li a{width: 100%; height: 100%; overflow: hidden; display: flex;align-items: center; justify-content: center;}
+          .profile .gallery li a img {width: 100%;} 
+          .profile .gallery li a img.row-long{width: 200%;}
+
+          .deem{position: fixed; width: 100%; height: 100vh; background: #000; top: 0; left: 0; z-index: 99999999; display: none; align-items: center; justify-content: center;}
+          .deem.active{display: flex;}
+          .deem .img-wrap{width: 50%;}
+            .deem .img-wrap img{width: 100%;}
+        
+          
+    /*profile-contents*/
+    .profile .profile-contents{padding: 0 20px;}
+      .profile .profile-contents h3{font-size: 30px;}
+        .profile .profile-contents h3 span{font-size: 20px;}
+
+        .profile .profile-contents dl{display: flex; align-items: flex-start; justify-content: flex-start;}
+          .profile .skills dl dt{font-size: 20px;}
+          .profile .skills dl dd{font-size: 18px; padding-left: 20px;}
   
   /* PORTFOLIO */
   /* main > .portfolio */
@@ -207,13 +234,14 @@ main{width: 100%;}
     .portfolio .inner{max-width: calc(100% - 300px); width: calc(100% - 300px); height:100%; padding: 0 100px;}
     .portfolio h2{width: 300px; height: 100%; padding-top:10px; text-align: center; font-size: 40px; background: #000;}
 
-    .portfolio-list{width: 100%; height: 100%; gap: 30px; flex-wrap: wrap; justify-content: center;}
+    .portfolio-list{width: 100%; height: 100%; gap: 30px; flex-wrap: wrap; justify-content: center; align-items: flex-start;}
       .portfolio-list li{width: 30%; height: 30%; box-shadow: 1px 3px 10px #adadad; padding: 5px;}
         .portfolio-list li a{width: 100%; height: calc(100% - 100px);}
           .portfolio-list li a img{width: 100%;}
 
-        .portfolio-list li dl{width: 100%; height: 100px; padding: 10px;}
+        .portfolio-list li dl{width: 100%; height: 100%; padding: 10px;}
           .portfolio-list li dl dt{font-weight: 600;}
+          .portfolio-list li dl dd:last-child{min-height: 50px;}
 
         /* slide style settings*/
         .portfolio .slick-slider{height: 100%;} 
@@ -223,9 +251,9 @@ main{width: 100%;}
   /* SNS */
   /* main > .sns */
   .sns{width: 100%;}
-    .sns .inner{height: 100%; gap: 100px; justify-content: center;}
+    .sns .inner{height: 100%;justify-content: center;}
 
-  
+    .sns h2{font-size: 40px; padding-bottom: 50px;}
     .sns .sns-list{width: 100%; gap: 50px;}
       .sns .sns-list li{width: 70px; height: 70px;}
         
@@ -239,3 +267,31 @@ main{width: 100%;}
   /* CONTACT */
   /* main > .contact */
   .contact{width: 100%;}
+    .contact .inner{width: 100%; height: 100%; display: flex; justify-content: center; flex-direction: column;}
+
+    .contact h2{font-size: 40px; padding-bottom: 50px;}
+
+    .contact article{width: 100%;}
+      .contact dl{display: flex; align-items: center; justify-items: center; padding-bottom: 20px;}
+        .contact dl dt{font-size: 20px; width: 200px;}
+        .contact dl dd{font-size: 20px;}
+      
+
+@media (max-width: 900px){
+
+  /* PROFILE */
+  /* main > .profile */
+  .profile{width: 100%;}
+    .profile .inner{padding: 20px;}
+    
+  /* PORTFOLIO */
+  /* main > .portfolio */
+  .portfolio{width: 100%;flex-direction: column;}
+    .portfolio .inner{max-width: 100%; width:100%; height:100%; padding: 0 10px;}
+    
+    .portfolio h2{width: 100%; height: 100px; text-align: left;padding:20px;}
+
+    .portfolio .inner{padding:20px;}
+      .portfolio .portfolio-list{width: 100%; height: calc(100% - 100px);}
+
+}
