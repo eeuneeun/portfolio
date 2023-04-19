@@ -200,12 +200,12 @@ main{width: 100%;}
   /* PROFILE */
   /* main > .profile */
   .profile{width: 100%;}
-    .profile .inner{height: 100%; padding: 20px 0;}
+    .profile .inner{height: 100%; padding: 20px 0; display: flex; justify-content: center; flex-direction: column;}
     .profile h2{font-size: 40px;}
     .profile article{width: 50%; height: 100%;}
     
     /* gallery */
-    .profile .gallery-wrap{width: 100%; height: 100%; padding: 50px 0; display: flex; align-items: center; justify-content: center;}
+    .profile .gallery-wrap{width: 100%; padding: 50px 0; display: flex; align-items: center; justify-content: center;}
     
     .profile .gallery-list{width: 100%; flex-wrap: wrap;}
       .profile .gallery li{width: 20%; max-height: 116px;overflow: hidden;}
@@ -213,20 +213,21 @@ main{width: 100%;}
           .profile .gallery li a img {width: 100%;} 
           .profile .gallery li a img.row-long{width: 200%;}
 
-          .deem{position: fixed; width: 100%; height: 100vh; background: #000; top: 0; left: 0; z-index: 99999999; display: none; align-items: center; justify-content: center;}
+          .deem{position: fixed; width: 100%; height: 100vh; top: 0; left: 0; z-index: 99999999; display: none; align-items: center; justify-content: center;}
           .deem.active{display: flex;}
-          .deem .img-wrap{width: 50%;}
-            .deem .img-wrap img{width: 100%;}
-        
+          .deem .img-wrap{width: 50%; display: flex; justify-content: center; align-items: center;}
+            .deem .img-wrap img{width:80%;}
+            .deem .img-wrap button{width:10%;height: 100px;  color: #fff;}
+          .deem .deem-bg{width: 100%; height: 100%; background: #000; position: absolute; z-index: -1;} 
           
     /*profile-contents*/
-    .profile .profile-contents{padding: 0 20px;}
-      .profile .profile-contents h3{font-size: 30px;}
+    .profile .profile-contents{padding: 0 0 20px 20px;}
+      .profile .profile-contents h3{font-size: 30px; margin-top: 0; line-height: 1;}
         .profile .profile-contents h3 span{font-size: 20px;}
 
-        .profile .profile-contents dl{display: flex; align-items: flex-start; justify-content: flex-start;}
-          .profile .skills dl dt{font-size: 20px;}
-          .profile .skills dl dd{font-size: 18px; padding-left: 20px;}
+        .profile .profile-contents dl{width: 100%;}
+          .profile .skills dl dt{font-size: 20px; padding-bottom:5px;}
+          .profile .skills dl dd{display: inline-block; font-size: 15px; margin: 0 20px 10px 0; background: #333; color: #fff; padding: 2px 10px; border-radius: 5px;}
   
   /* PORTFOLIO */
   /* main > .portfolio */
