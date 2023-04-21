@@ -13,7 +13,7 @@ export default function MainSlider() {
   };
   return (
     <Slider {...settings}>
-      <article>
+      <article className="portfolio-list-wrap">
         <ul className="portfolio-list flex-start">
           <li>
             <Link
@@ -35,7 +35,7 @@ export default function MainSlider() {
                 <span className="label mssql">mssql</span>
                 <span className="label html5">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label photoshop">photoshop</span>
               </dd>
             </dl>
@@ -58,7 +58,7 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label photoshop">photoshop</span>
               </dd>
             </dl>
@@ -80,7 +80,7 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label jqeury">JQuery</span>
               </dd>
             </dl>
@@ -102,7 +102,7 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label jqeury">JQuery</span>
               </dd>
             </dl>
@@ -127,7 +127,7 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label react">react js</span>
                 <span className="label nextjs">Next js</span>
               </dd>
@@ -153,7 +153,7 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label react">react js</span>
                 <span className="label nextjs">Next js</span>
               </dd>
@@ -180,7 +180,7 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
               </dd>
             </dl>
           </li>
@@ -201,7 +201,7 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label java">java</span>
                 <span className="label spring">spring</span>
                 <span className="label mysql">mysql</span>
@@ -228,7 +228,7 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label java">java</span>
                 <span className="label spring">spring</span>
                 <span className="label mysql">mysql</span>
@@ -250,10 +250,32 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label java">java</span>
                 <span className="label spring">spring</span>
                 <span className="label mysql">mysql</span>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <Link
+              href="https://eeuneeun.github.io/manpower"
+              target="blank"
+              passHref
+              legacyBehavior
+            >
+              <a>
+                <img src={`${prefix}/img/web11.png`} alt="맨파워 홈페이지" />
+              </a>
+            </Link>
+            <dl>
+              <dt>맨파워 홈페이지</dt>
+              <dd>작업기간 : 2022.10 ~ 2023.4</dd>
+              <dd>
+                사용기술 :<span className="label">html5</span>
+                <span className="label css">css3</span>
+                <span className="label js">javascript</span>
+                <span className="label jqeury">jQeury</span>
               </dd>
             </dl>
           </li>
@@ -272,29 +294,7 @@ export default function MainSlider() {
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
-                <span className="label java">java</span>
-                <span className="label spring">spring</span>
-                <span className="label mysql">mysql</span>
-              </dd>
-            </dl>
-          </li>
-          <li>
-            <Link href="#" target="blank" passHref legacyBehavior>
-              <a>
-                <img
-                  src={`${prefix}/img/web10.png`}
-                  alt="KPP 태양광 발전량 예측"
-                />
-              </a>
-            </Link>
-            <dl>
-              <dt>KPP 태양광 발전량 예측</dt>
-              <dd>작업기간 : 2022.10 ~ 2023.4</dd>
-              <dd>
-                사용기술 :<span className="label">html5</span>
-                <span className="label css">css3</span>
-                <span className="label js">Javascript</span>
+                <span className="label js">javascript</span>
                 <span className="label java">java</span>
                 <span className="label spring">spring</span>
                 <span className="label mysql">mysql</span>

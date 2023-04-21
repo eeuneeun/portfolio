@@ -255,9 +255,11 @@ main{width: 100%;}
     .portfolio .inner{max-width: calc(100% - 300px); width: calc(100% - 300px); height:100%; padding: 0 100px;}
     .portfolio h2{width: 300px; height: 100%; padding-top:10px; text-align: center; font-size: 40px; background: #000;}
 
+
+    .portfolio-list-wrap{width: 100% ; height: 100%;}
     .portfolio-list{width: 100%; height: 100%; gap: 10px; flex-wrap: wrap; justify-content: center; align-items: flex-start;}
-      .portfolio-list li{width: 30%; box-shadow: 1px 3px 10px #adadad; padding: 5px;}
-        .portfolio-list li a{width: 100%; height: calc(100% - 100px);}
+      .portfolio-list li{width: 30%; height: 100%; box-shadow: 1px 3px 10px #adadad; padding: 5px;}
+        .portfolio-list li a{width: 100%; height: calc(100% - 100px); min-height: 110px;}
           .portfolio-list li a img{width: 100%;}
 
         .portfolio-list li dl{width: 100%; height: 100%; padding: 10px;}
@@ -305,7 +307,7 @@ main{width: 100%;}
   .portfolio{width: 100%;flex-direction: column;}
     .portfolio .inner{max-width: 100%; width:100%; height:100%; padding: 20px;}
     
-    .portfolio h2{width: 100%; height: 100px; text-align: left;padding:20px;}
+    .portfolio h2{width: 100%; height: 100px; text-align: left;padding:20px; color: #ffe934;}
     .portfolio .portfolio-list{width: 100%; height: calc(100% - 100px);}
     .portfolio .portfolio-list li{width: calc(32% - 3.33333333px);;}
 }
@@ -321,14 +323,24 @@ main{width: 100%;}
 @media (max-width: 800px){
   /* PORTFOLIO */
   /* main > .portfolio */
-  .portfolio .inner{padding: 10px;}
-  .portfolio h2{font-size: 35px;}
-  .portfolio .portfolio-list{width: 100%; height: calc(100% - 100px);}
-    .portfolio .portfolio-list li{width: 45%;}
+  .portfolio{height: 100%;}
+    .portfolio .inner{padding: 10px; height: unset;}
+    .portfolio h2{font-size: 35px;}
+    .portfolio .portfolio-list{width: 100%; height: calc(100% - 100px);}
+      .portfolio .portfolio-list li{width: 45%;}
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
+   /* PROFILE */
+  /* main > .profile */
+  .profile .inner{height: fit-content;}
+  .profile article{width: 100%;}
+  .profile .gallery-wrap{flex-direction: column-reverse;}
 }
 
 @media (max-width: 425px){
+  /* PORTFOLIO */
+  /* main > .portfolio */
+  .portfolio-list li dl dd:last-child{min-height: 78px;}
 }
+
