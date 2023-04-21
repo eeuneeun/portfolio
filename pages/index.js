@@ -26,39 +26,38 @@ export default function Home() {
                   원은재 <span>1989.02.06</span>
                 </h3>
 
-                <h3>보유기술</h3>
+                <h3 className="display-none">보유기술</h3>
                 <div className="skills">
                   <dl>
                     <dt>TOOLS</dt>
-                    <dd>포토샵</dd>
-                    <dd>일러스트레이터</dd>
-                    <dd>디지털 드로잉</dd>
+                    <dd className="photoshop">포토샵</dd>
+                    <dd className="illustrator">일러스트레이터</dd>
+                    <dd className="drawing">디지털 드로잉</dd>
                   </dl>
                   <dl>
                     <dt>FRONTEND</dt>
-                    <dd>Vanilla Javascript ECMA 5, ECMA 6</dd>
-                    <dd>JQuery</dd>
-                    <dd>React.js</dd>
-                    <dd>Next.js</dd>
-                    <dd>Vue.js</dd>
-                    <dd>Svelt</dd>
+                    <dd className="js">Vanilla Javascript ECMA 5, ECMA 6</dd>
+                    <dd className="jqeury">JQuery</dd>
+                    <dd className="react">React.js</dd>
+                    <dd className="nextjs">Next.js</dd>
+                    <dd className="vuejs">Vue.js</dd>
+                    <dd className="svelt">Svelt</dd>
                   </dl>
                   <dl>
                     <dt>BACKEND</dt>
-                    <dd>Node.js Express Fastify</dd>
-                    <dd>Java</dd>
+                    <dd className="nodejs">Node.js Express Fastify</dd>
+                    <dd className="java">Java</dd>
                   </dl>
                   <dl>
                     <dt>BASH SHELL </dt>
-                    <dd>Shell script Zenity</dd>
-                    <dd>Vyatta</dd>
-                    <dd>Zabbix</dd>
+                    <dd className="shell">Shell script Zenity</dd>
+                    <dd className="vyatta">Vyatta</dd>
+                    <dd className="zabbix">Zabbix</dd>
                   </dl>
                   <dl>
                     <dt>SERVER</dt>
-                    <dd>Docker</dd>
-                    <dd>Docker</dd>
-                    <dd>Kubernetes Kubeflow airflow</dd>
+                    <dd className="docker">Docker</dd>
+                    <dd className="kubernetes">Kubernetes Kubeflow airflow</dd>
                   </dl>
                 </div>
               </article>
@@ -79,24 +78,42 @@ export default function Home() {
             <article>
               <ul className="sns-list flex-center">
                 <li>
-                  <Link href="">kakaotalk</Link>
+                  <Link
+                    href="https://open.kakao.com/o/s3Riyngf"
+                    passHref
+                    legacyBehavior
+                  >
+                    <a>kakaotalk</a>
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://blog.naver.com/sacroo" target="_blank">
-                    naver blog
+                  <Link
+                    href="https://blog.naver.com/sacroo"
+                    target="_blank"
+                    passHref
+                    legacyBehavior
+                  >
+                    <a>naver blog</a>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="https://www.instagram.com/sacroosy/"
                     target="_blank"
+                    passHref
+                    legacyBehavior
                   >
-                    instagram
+                    <a>instagram</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="" target="_blank">
-                    twitter
+                  <Link
+                    href="https://github.com/eeuneeun/"
+                    target="_blank"
+                    passHref
+                    legacyBehavior
+                  >
+                    <a>github</a>
                   </Link>
                 </li>
               </ul>

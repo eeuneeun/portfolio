@@ -148,9 +148,7 @@ export default function MainSlider() {
               </a>
             </Link>
             <dl>
-              <dt>
-                하나카드 현대해상 파이낸스 세이프보험 상담원용 관리자 페이지
-              </dt>
+              <dt>파이낸스 세이프보험 상담원용 페이지</dt>
               <dd>작업기간 : 2018.05 ~ 2015.12</dd>
               <dd>
                 사용기술 :<span className="label">html5</span>
