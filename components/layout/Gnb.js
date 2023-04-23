@@ -43,7 +43,7 @@ export default function Gnb(props) {
           <h1 className="title">
             <Link href="/">EUN</Link>
           </h1>
-          <div className="ham-menu active">
+          <div className="ham-menu">
             <button className="close">닫기</button>
             <ul>
               <li>
