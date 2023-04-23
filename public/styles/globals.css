@@ -141,12 +141,12 @@ body{ -ms-overflow-style: none; }
 **************************/
 
 /* 3-1. layout */
-.wrap{width: 100%; height: 100vh;}
+.wrap{width: 100%; height: 100vh; position: relative;}
 .page-wrap{width: 100%; background: #fff;}
 
 
 /* 3-2. container */
-.container-wrap{width: 100%; height: calc(100vh - 75px); position: fixed; top: 75px; overflow: auto;}
+.container-wrap{width: 100%; height: calc(100vh - 75px); position: absolute; top: 75px; overflow: auto;}
 
 /* 3-3. arccordion */
 .arccordion{width: 100%;}
@@ -223,11 +223,11 @@ main{width: 100%;}
     /* gallery */
     .profile .gallery-wrap{width: 100%; padding: 50px 0; display: flex; align-items: center; justify-content: center;}
     
-    .profile .gallery-list{width: 100%; flex-wrap: wrap;}
-      .profile .gallery li{width: 20%; max-height: 116px;overflow: hidden;}
+    .profile .gallery-list{width: 100%; max-width: 580px; flex-wrap: wrap; margin: 0 auto;}
+      .profile .gallery li{width: 20%; max-width: 116px; max-height: 116px;overflow: hidden;}
         .profile .gallery li a{width: 100%; height: 100%; overflow: hidden; display: flex;align-items: center; justify-content: center;}
           .profile .gallery li a img {width: 110%;} 
-          .profile .gallery li a img.row-long{width: 200%;}
+          .profile .gallery li a img.row-long{width: 210%;}
 
           .deem{position: fixed; width: 100%; height: 100vh; top: 0; left: 0; z-index: 99999999; display: none; align-items: center; justify-content: center;}
           .deem.active{display: flex;}
@@ -259,7 +259,7 @@ main{width: 100%;}
     .portfolio-list-wrap{width: 100% ; height: 100%;}
     .portfolio-list{width: 100%; height: 100%; gap: 10px; flex-wrap: wrap; justify-content: center; align-items: flex-start;}
       .portfolio-list li{width: 30%; height: 100%; box-shadow: 1px 3px 10px #adadad; padding: 5px;}
-        .portfolio-list li a{width: 100%; height: calc(100% - 100px); min-height: 110px;}
+        .portfolio-list li a{width: 100%; height: calc(100% - 100px); min-height: 110px; max-height: 130px; overflow: hidden;}
           .portfolio-list li a img{width: 100%;}
 
         .portfolio-list li dl{width: 100%; height: 100%; padding: 10px;}
@@ -317,7 +317,8 @@ main{width: 100%;}
   /* main > .profile */
   .profile{width: 100%;}
     .profile .inner{padding: 20px;}
-    
+    .profile .gallery li a img {width: 130%;}
+    .profile .gallery li a img.row-long {width: 230%;}
 }
 
 @media (max-width: 800px){
@@ -331,11 +332,36 @@ main{width: 100%;}
 }
 
 @media (max-width: 768px){
-   /* PROFILE */
+  /* COMMON */
+  main > div{width: 90%; max-width: 580px; height: auto; margin: 0 auto;}
+  
+   /* HOME */
+   main > .home{width: 100%; max-width: 100%; height: 100vh;}
+
+  /* PROFILE */
   /* main > .profile */
+  .profile{width: 100%; max-width: 580px; margin: 0 auto;}
   .profile .inner{height: fit-content;}
+
   .profile article{width: 100%;}
-  .profile .gallery-wrap{flex-direction: column-reverse;}
+    .profile .profile-contents{padding: 0;}
+    
+      .profile .skills{padding-bottom: 50px;}
+    
+      .profile .gallery-wrap{flex-direction: column-reverse; padding-top: 20px;}
+        .profile .gallery li a img {width: 100%;}
+
+  /* PORTFOLIO */
+  /* main > .portfolio */
+  .portfolio-list li a{height: 110px;}
+
+  /* SNS */
+  /* main > .sns */
+  .sns{height: 50vh;}
+
+  /* CONTACT */
+  /* main > .contact */
+  .contact{height: 50vh;;}
 }
 
 @media (max-width: 425px){

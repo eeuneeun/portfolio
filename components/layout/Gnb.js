@@ -17,7 +17,7 @@ export default function Gnb(props) {
   return (
     <>
       <header className="gnb">
-        <div className="inner flex-between">
+        <div className="inner flex-between pc">
           <h1 className="title">
             <Link href="/">EUN</Link>
           </h1>
@@ -38,6 +38,31 @@ export default function Gnb(props) {
               <Link href={`${prefix}/#contact`}>CONTACT</Link>
             </li>
           </ul>
+        </div>
+        <div className="inner flex-between mobile">
+          <h1 className="title">
+            <Link href="/">EUN</Link>
+          </h1>
+          <div className="ham-menu active">
+            <button className="close">닫기</button>
+            <ul>
+              <li>
+                <Link href={`${prefix}/`}>HOME</Link>
+              </li>
+              <li>
+                <Link href={`${prefix}/#profile`}>PROFILE</Link>
+              </li>
+              <li>
+                <Link href={`${prefix}/#portfolio`}>PORTFOLIO</Link>
+              </li>
+              <li>
+                <Link href={`${prefix}/#sns`}>SNS</Link>
+              </li>
+              <li>
+                <Link href={`${prefix}/#contact`}>CONTACT</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
     </>

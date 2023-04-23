@@ -280,24 +280,27 @@ export default function MainSlider() {
             </dl>
           </li>
           <li>
-            <Link href="#" target="blank" passHref legacyBehavior>
+            <Link
+              href="https://lottewac.github.io/"
+              target="blank"
+              passHref
+              legacyBehavior
+            >
               <a>
                 <img
-                  src={`${prefix}/img/web10.png`}
-                  alt="KPP 태양광 발전량 예측"
+                  src={`${prefix}/img/web12.png`}
+                  alt="롯데마트 웹 접근성 가이드"
                 />
               </a>
             </Link>
             <dl>
-              <dt>KPP 태양광 발전량 예측</dt>
+              <dt>롯데마트 웹 접근성 가이드</dt>
               <dd>작업기간 : 2022.10 ~ 2023.4</dd>
               <dd>
                 사용기술 :<span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
-                <span className="label java">java</span>
-                <span className="label spring">spring</span>
-                <span className="label mysql">mysql</span>
+                <span className="label jquery">JQuery</span>
               </dd>
             </dl>
           </li>
