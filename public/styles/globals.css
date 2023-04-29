@@ -98,6 +98,7 @@ body{ -ms-overflow-style: none; }
 
 /* 2-1. custom color */
 .theme-color-bg{background:#0cbc80 !important;}
+.design{background: #fb92ae!important;}
 .css{background: #17714c!important;}
 
 .js{background: #ffc549!important;}
