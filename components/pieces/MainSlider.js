@@ -33,7 +33,7 @@ export default function MainSlider() {
               <dt>BEEKK 프론트엔드 가이드</dt>
               <dd>작업기간 : 2022.7 ~ 2022.8</dd>
               <dd>
-                사용기술 :<span className="label">html5</span>
+                <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
               </dd>
@@ -54,7 +54,7 @@ export default function MainSlider() {
               <dt>롯데렌터카 챗봇</dt>
               <dd>작업기간 : 2021.12 ~ 2022.3</dd>
               <dd>
-                사용기술 :<span className="label">html5</span>
+                <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
               </dd>
@@ -73,7 +73,7 @@ export default function MainSlider() {
               <dt>KPP 태양광 발전량 예측</dt>
               <dd>작업기간 : 2021.6 ~ 2022.4</dd>
               <dd>
-                사용기술 :<span className="label">html5</span>
+                <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
                 <span className="label java">java</span>
@@ -97,7 +97,7 @@ export default function MainSlider() {
               <dt>고궁박물관</dt>
               <dd>작업기간 : 2021.4 ~ 2021.11</dd>
               <dd>
-                사용기술 :<span className="label">html5</span>
+                <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
                 <span className="label java">java</span>
@@ -124,7 +124,7 @@ export default function MainSlider() {
               <dt>디지털 전자정부 홍보관</dt>
               <dd>작업기간 : 2021.4 ~ 2021.5</dd>
               <dd>
-                사용기술 :<span className="label">html5</span>
+                <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
                 <span className="label java">java</span>
@@ -151,7 +151,7 @@ export default function MainSlider() {
               <dt>하나카드 현대해상 파이낸스 세이프보험</dt>
               <dd>작업기간 : 2021.03 ~ 2021.04</dd>
               <dd>
-                사용기술 :<span className="label">html5</span>
+                <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
                 <span className="label react">react js</span>
@@ -181,7 +181,7 @@ export default function MainSlider() {
               <dt>파이낸스 세이프보험 상담원용 페이지</dt>
               <dd>작업기간 : 2021.03 ~ 2021.04</dd>
               <dd>
-                사용기술 :<span className="label design">design</span>
+                :<span className="label design">design</span>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
@@ -206,9 +206,9 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>롯데마트 웹 접근성 가이드</dt>
-              <dd>작업기간 : 2019.05 ~ 2019.06</dd>
+              <dd>작업기간 : 2020.05 ~ 2020.06</dd>
               <dd>
-                사용기술 :<span className="label design">design</span>
+                :<span className="label design">design</span>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
@@ -229,35 +229,12 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>롯데마트 웹 접근성</dt>
-              <dd>작업기간 : 2017.06 ~ 2019.06</dd>
+              <dd>작업기간 : 2018.05 ~ 2020.05</dd>
               <dd>
-                사용기술 :<span className="label">html5</span>
-                <span className="label css">css3</span>
-                <span className="label js">javascript</span>
-                <span className="label jqeury">JQuery</span>
-              </dd>
-            </dl>
-          </li>
-          <li>
-            <Link
-              href="https://eeuneeun.github.io/manpower"
-              target="blank"
-              passHref
-              legacyBehavior
-            >
-              <a>
-                <img src={`${prefix}/img/web11.png`} alt="맨파워 홈페이지" />
-              </a>
-            </Link>
-            <dl>
-              <dt>맨파워 홈페이지</dt>
-              <dd>작업기간 : 2022.10 ~ 2023.4</dd>
-              <dd>
-                사용기술 :<span className="label design">design</span>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
-                <span className="label jqeury">jQeury</span>
+                <span className="label jqeury">JQuery</span>
               </dd>
             </dl>
           </li>
@@ -275,9 +252,9 @@ export default function MainSlider() {
 
             <dl>
               <dt>코인빗 랜딩 페이지</dt>
-              <dd>작업기간 : 2018.05 ~ 2015.12</dd>
+              <dd>작업기간 : 2018.05 ~ 2018.05</dd>
               <dd>
-                사용기술 :<span className="label design">design</span>
+                :<span className="label design">design</span>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
@@ -298,9 +275,9 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>코인빗 거래소</dt>
-              <dd>작업기간 : 2019.04 ~ 2015.8</dd>
+              <dd>작업기간 : 2018.03 ~ 2018.05</dd>
               <dd>
-                사용기술 :<span className="label">html5</span>
+                <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
                 <span className="label jqeury">JQuery</span>
@@ -308,6 +285,33 @@ export default function MainSlider() {
             </dl>
           </li>
           <li>
+            <Link
+              href="https://eeuneeun.github.io/manpower"
+              target="blank"
+              passHref
+              legacyBehavior
+            >
+              <a>
+                <img src={`${prefix}/img/web11.png`} alt="맨파워 홈페이지" />
+              </a>
+            </Link>
+            <dl>
+              <dt>맨파워 홈페이지</dt>
+              <dd>작업기간 : 2017.10 ~ 2017.12</dd>
+              <dd>
+                :<span className="label design">design</span>
+                <span className="label">html5</span>
+                <span className="label css">css3</span>
+                <span className="label js">javascript</span>
+                <span className="label jqeury">jQeury</span>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </article>
+      <article className="portfolio-list-wrap">
+        <ul className="portfolio-list flex-start">
+          <li className="margin-right-auto">
             <Link
               href="http://www.khma.org/portal/portal.web"
               target="blank"
@@ -318,12 +322,11 @@ export default function MainSlider() {
                 <img src={`${prefix}/img/web01.png`} alt="대한주택관리사협회" />
               </a>
             </Link>
-
             <dl>
               <dt>대한주택관리사협회</dt>
-              <dd>작업기간 : 2015.05 ~ 2015.12</dd>
+              <dd>작업기간 : 2017.04 ~ 2017.09</dd>
               <dd>
-                사용기술 :<span className="label">java</span>
+                <span className="label">java</span>
                 <span className="label mssql">mssql</span>
                 <span className="label html5">html5</span>
                 <span className="label css">css3</span>
