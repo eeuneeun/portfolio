@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
-const withPlugins = require("next-compose-plugins");
-const withPWA = require("next-pwa");
-const withOptimizedImages = require("next-optimized-images");
-const withFonts = require("next-fonts");
-const FilterWarningsPlugin = require("webpack-filter-warnings-plugin");
 
 const debug = process.env.NODE_ENV !== "production";
 const repository = "portfolio";
+
+const withPWA = require("next-pwa")({
+  dest: "public",
+});
 
 const nextConfig = {
   reactStrictMode: true,
@@ -25,29 +24,6 @@ const nextConfig = {
   },
 };
 
-module.exports = withPlugins(
-  [
-    [
-      withPWA,
-      {
-        pwa: {
-          dest: "public",
-        },
-      },
-    ],
-    [
-      withOptimizedImages,
-      {
-        mozjpeg: {
-          quality: 90,
-        },
-        webp: {
-          preset: "default",
-          quality: 90,
-        },
-      },
-    ],
-    withFonts,
-  ],
-  nextConfig
-);
+module.exports = withPWA({
+  nextConfig,
+});
