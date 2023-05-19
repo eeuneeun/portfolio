@@ -12,6 +12,8 @@ export default class MyDocument extends Document {
             name="apple-mobile-web-app-status-bar-style"
             content="black-translucent"
           />
+
+          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <div id="root" className="wrap">

@@ -1,0 +1,27 @@
+{
+    "name": "원은재 포폴",
+    "short_name": "원은재 포폴",
+    "icons": [
+        {
+          "src": "favicon.ico",
+          "sizes": "64x64 32x32 24x24 16x16",
+          "type": "image/x-icon"
+        },
+        {
+          "src": "img/pwa_icon.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "img/pwa_icon.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ],
+    "theme_color": "#ffd200",
+    "background_color": "#000000",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "index.html",
+    "start_url": "/index.html"
+  }
