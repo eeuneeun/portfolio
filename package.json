@@ -16,6 +16,8 @@
     "react-slick": "^0.29.0"
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "@types/react": "^18.2.6",
+    "gh-pages": "^5.0.0",
+    "typescript": "^5.0.4"
   }
 }
