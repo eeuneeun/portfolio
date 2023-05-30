@@ -148,6 +148,7 @@ body{ -ms-overflow-style: none; }
 
 /* 3-2. container */
 .container-wrap{width: 100%; height: calc(100vh - 75px); position: absolute; top: 75px; overflow: auto;}
+.container{width: 100%;}
 
 /* 3-3. arccordion */
 .arccordion{width: 100%;}
