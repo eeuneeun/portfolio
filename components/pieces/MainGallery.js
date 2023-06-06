@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { prefix } from "/config/config.js";
 
-export default function MainSlider() {
+export default function MainGallery() {
   const [isActive, setIsActive] = useState(false);
   const [imgNum, setImgNum] = useState(null);
 

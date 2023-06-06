@@ -10,7 +10,6 @@ import { prefix } from "../config/config";
 
 /* CSS */
 import "../public/styles/components.css";
-import "../public/styles/templates.css";
 import "../public/styles/globals.css";
 
 /* LAYOUT */
@@ -18,10 +17,6 @@ import Header from "../components/layout/Header.js";
 import Gnb from "../components/layout/Gnb.js";
 
 export default function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    console.log("_app.js");
-  }, []);
-
   return (
     <>
       <PortfolioProvider value={{ prefix }}>

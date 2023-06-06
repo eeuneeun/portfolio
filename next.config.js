@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const withPlugins = require("next-compose-plugins");
 const withPWA = require("next-pwa");
-const withOptimizedImages = require("next-optimized-images");
 const withFonts = require("next-fonts");
 const FilterWarningsPlugin = require("webpack-filter-warnings-plugin");
 
@@ -32,18 +31,6 @@ module.exports = withPlugins(
       {
         pwa: {
           dest: "public",
-        },
-      },
-    ],
-    [
-      withOptimizedImages,
-      {
-        mozjpeg: {
-          quality: 90,
-        },
-        webp: {
-          preset: "default",
-          quality: 90,
         },
       },
     ],
