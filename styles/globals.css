@@ -36,7 +36,7 @@ h2{color: #333; font-weight: 600;}
 
 html{height:100vh;}
 html,body{width:100%; margin:0 auto;}
-body{background-color:#fff;*word-break:break-all;-ms-word-break:break-all; font-family:'Calibri', 'MalgunGothic', 'sans-serif';text-align:left; }
+body{background-color:#fff; word-break:break-all; -ms-word-break:break-all; font-family:'Calibri', 'MalgunGothic', 'sans-serif';text-align:left; }
 img,fieldset,iframe{border:0 none}
 li{list-style:none}
 input,select,button{vertical-align:middle}
@@ -275,7 +275,7 @@ main{width: 100%;}
         .portfolio .slick-slider{height: 100%;} 
         .portfolio .slick-list{height: 100%; padding: 10px 0;}
 
- /* STUDDY */
+  /* STUDDY */
   /* main > .study */
   .study{width: 100%; height: fit-content; padding: 100px 0;}
     .study .inner{height: 100%;justify-content: center;}
@@ -314,7 +314,7 @@ main{width: 100%;}
   /* CONTACT */
   /* main > .contact */
   .contact{width: 100%;}
-    .contact .inner{width: 100%; height: 100%; display: flex; justify-content: center; flex-direction: column;}
+    .contact .inner{width: 100%; height: 100%; display: flex; justify-content: center; flex-direction: column; padding: 0 30px;}
 
     .contact h2{font-size: 40px; padding-bottom: 50px;}
 
@@ -336,12 +336,35 @@ main{width: 100%;}
 }
 
 @media (max-width: 900px){
+  /* COMMON */
+  main > div h2{font-size: 35px;}
+
   /* PROFILE */
   /* main > .profile */
   .profile{width: 100%;}
     .profile .inner{padding: 20px;}
     .profile .gallery li a img {width: 130%;}
     .profile .gallery li a img.row-long {width: 230%;}
+
+  /* STUDDY */
+  /* main > .study */
+  .study .inner{padding:0 20px;}
+    .study h2{font-size: 35px;}
+    .study h3{font-size: 19px;}
+    
+    .study .project{flex-direction: column-reverse;}
+      .study .project .spec{width: 100%;}
+        .study .project .spec dl{padding:5px 0;}
+        .study .project .spec dl:first-child{padding-top: 20px;}
+
+          .study .project .spec dl dt{width: 25%; font-size: 14px;}
+          .study .project .spec dl dd{width: 75%; font-size: 14px;}
+
+      .study .project .video-wrap{width: 100%;}
+
+  /* CONTACT */
+  /* main > .contact */
+  .contact h2{font-size: 35px;}
 }
 
 @media (max-width: 800px){
@@ -357,9 +380,13 @@ main{width: 100%;}
 @media (max-width: 768px){
   /* COMMON */
   main > div{width: 90%; max-width: 580px; height: auto; margin: 0 auto;}
+  main > div h2{font-size: 30px;}
+
   
    /* HOME */
-   main > .home{width: 100%; max-width: 100%; height: 100vh;}
+   main > .home{width: 100%; max-width: 100%; height: 100vh; padding: 0 10px;}
+    main > .home h2{font-size:50px;}
+    main > .home p{font-size: 14px;}
 
   /* PROFILE */
   /* main > .profile */
@@ -377,7 +404,11 @@ main{width: 100%;}
 
   /* PORTFOLIO */
   /* main > .portfolio */
-  .portfolio-list li a{height: 110px;}
+  .portfolio-list li a{height: 110px; min-height: unset; max-height: unset; display: flex; align-items: center; justify-content: center;}
+    .portfolio-list li a img{width: 200%;}
+
+  .portfolio-list li dl dd:nth-child(2){font-size: 13px;}
+    .portfolio-list li dl dd:nth-child(2) span{font-size: 14px; font-weight: 500; color: #353535;}
 
   /* SNS */
   /* main > .sns */
@@ -385,17 +416,56 @@ main{width: 100%;}
 
   /* CONTACT */
   /* main > .contact */
-  .contact{height: 50vh;;}
+  .contact{height: 50vh;}
+    .contact .inner{padding: 0 20px;}
 }
 
 @media (max-width: 425px){
   /* PROFILE */
   /* main > .profile */
-  .profile .gallery li{max-height: 801px;}
-  
+  .profile .gallery li{max-height: 80px;}
+    .portfolio-list li a{height: 110px;}
+      .profile .gallery li a img{width: 120%;}
   
   /* PORTFOLIO */
   /* main > .portfolio */
   .portfolio-list li dl dd:last-child{min-height: 78px;}
+
+  /* SNS */
+  /* main > .sns */
+  .sns .sns-list{flex-wrap: wrap;}
+    .sns article{width: 82%; padding: 0 20px;}
+      .sns article ul{width: 100%;}
+
+
+  /* CONTACT */
+  /* main > .contact */
+  .contact dl dt{width: 130px; font-size: 17px;}
+  .contact dl dd{font-size: 17px;}
+
 }
+
+@media (max-width: 375px){
+  /* PORTFOLIO */
+  /* main > .portfolio */
+  .portfolio-list li dl dd:nth-child(2) span{display: none;}
+
+}
+
+@media (max-width: 320px){
+   /* STUDDY */
+  /* main > .study */
+  .study .project .spec dl{flex-direction: column; align-items: flex-start;}
+    .study .project .spec dl dt{font-size: 14px; font-weight: 500; position: relative; padding-left: 7px; width: 100%;} 
+      .study .project .spec dl dt::before{content: ''; position: absolute; top: 5%; left: 0; width: 3px; height: 90%; background: #aeaeae;}
+    .study .project .spec dl dd{width: 100%; font-size: 14px; padding-top: 5px;}
+    
+  /* CONTACT */
+  /* main > .contact */
+  .contact dl dt{width: 110px; font-size: 15px;}
+  .contact dl dd{font-size: 15px;}
+}
+
+
+
 
