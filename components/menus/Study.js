@@ -50,7 +50,7 @@ export default function Study(props) {
           <div className="spec">
             <dl>
               <dt>OS : </dt>
-              <dd>WIDOW</dd>
+              <dd>WINDOW</dd>
             </dl>
             <dl>
               <dt>LANGUAGE : </dt>

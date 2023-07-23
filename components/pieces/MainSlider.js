@@ -31,7 +31,7 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>BEEKK 프론트엔드 가이드</dt>
-              <dd>작업기간 : 2022.7 ~ 2022.8</dd>
+              <dd><span>작업기간</span> 2022.07 ~ 2022.08</dd>
               <dd>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
@@ -52,7 +52,7 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>롯데렌터카 챗봇</dt>
-              <dd>작업기간 : 2021.12 ~ 2022.3</dd>
+              <dd><span>작업기간</span> 2021.12 ~ 2022.03</dd>
               <dd>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
@@ -71,7 +71,7 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>KPP 태양광 발전량 예측</dt>
-              <dd>작업기간 : 2021.6 ~ 2022.4</dd>
+              <dd><span>작업기간</span> 2021.06 ~ 2022.04</dd>
               <dd>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
@@ -95,7 +95,7 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>고궁박물관</dt>
-              <dd>작업기간 : 2021.4 ~ 2021.11</dd>
+              <dd><span>작업기간</span> 2021.04 ~ 2021.11</dd>
               <dd>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
@@ -122,7 +122,7 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>디지털 전자정부 홍보관</dt>
-              <dd>작업기간 : 2021.4 ~ 2021.5</dd>
+              <dd><span>작업기간</span> 2021.04 ~ 2021.05</dd>
               <dd>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
@@ -149,7 +149,7 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>하나카드 현대해상 파이낸스 세이프보험</dt>
-              <dd>작업기간 : 2021.03 ~ 2021.04</dd>
+              <dd><span>작업기간</span> 2021.03 ~ 2021.04</dd>
               <dd>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
@@ -179,9 +179,9 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>파이낸스 세이프보험 상담원용 페이지</dt>
-              <dd>작업기간 : 2021.03 ~ 2021.04</dd>
+              <dd><span>작업기간</span> 2021.03 ~ 2021.04</dd>
               <dd>
-                :<span className="label design">design</span>
+               <span className="label design">design</span>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
@@ -206,9 +206,9 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>롯데마트 웹 접근성 가이드</dt>
-              <dd>작업기간 : 2020.05 ~ 2020.06</dd>
+              <dd><span>작업기간</span> 2020.05 ~ 2020.06</dd>
               <dd>
-                :<span className="label design">design</span>
+               <span className="label design">design</span>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
@@ -229,7 +229,7 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>롯데마트 웹 접근성</dt>
-              <dd>작업기간 : 2018.05 ~ 2020.05</dd>
+              <dd><span>작업기간</span> 2018.05 ~ 2020.05</dd>
               <dd>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
@@ -252,9 +252,9 @@ export default function MainSlider() {
 
             <dl>
               <dt>코인빗 랜딩 페이지</dt>
-              <dd>작업기간 : 2018.05 ~ 2018.05</dd>
+              <dd><span>작업기간</span> 2018.05 ~ 2018.05</dd>
               <dd>
-                :<span className="label design">design</span>
+                <span className="label design">design</span>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
@@ -275,7 +275,7 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>코인빗 거래소</dt>
-              <dd>작업기간 : 2018.03 ~ 2018.05</dd>
+              <dd><span>작업기간</span> 2018.03 ~ 2018.05</dd>
               <dd>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
@@ -297,9 +297,9 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>맨파워 홈페이지</dt>
-              <dd>작업기간 : 2017.10 ~ 2017.12</dd>
+              <dd><span>작업기간</span> 2017.10 ~ 2017.12</dd>
               <dd>
-                :<span className="label design">design</span>
+                <span className="label design">design</span>
                 <span className="label">html5</span>
                 <span className="label css">css3</span>
                 <span className="label js">javascript</span>
@@ -324,7 +324,7 @@ export default function MainSlider() {
             </Link>
             <dl>
               <dt>대한주택관리사협회</dt>
-              <dd>작업기간 : 2017.04 ~ 2017.09</dd>
+              <dd><span>작업기간</span> 2017.04 ~ 2017.09</dd>
               <dd>
                 <span className="label">java</span>
                 <span className="label mssql">mssql</span>
