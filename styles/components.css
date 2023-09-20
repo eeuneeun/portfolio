@@ -47,4 +47,9 @@ footer h5{padding-top: 0;}
 @media (max-width: 425px){
  .main>.home h2 { font-size: 80px; } 
  .main>.home p { font-size: 17px; } 
- }
+
+
+ footer{display: flex; align-items: center; justify-content: center;}
+    footer > .flex-center{ height: unset; flex-direction: column;}
+    footer h5{padding: 0;}
+}
