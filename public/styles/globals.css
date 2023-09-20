@@ -36,7 +36,7 @@ h2{color: #333; font-weight: 600;}
 
 html{height:100vh;}
 html,body{width:100%; margin:0 auto;}
-body{background-color:#fff;*word-break:break-all;-ms-word-break:break-all; font-family:'Calibri', 'MalgunGothic', 'sans-serif';text-align:left; }
+body{background-color:#fff; word-break:break-all;-ms-word-break:break-all; font-family:'Calibri', 'MalgunGothic', 'sans-serif';text-align:left; }
 img,fieldset,iframe{border:0 none}
 li{list-style:none}
 input,select,button{vertical-align:middle}
@@ -393,9 +393,26 @@ main{width: 100%;}
   /* main > .profile */
   .profile .gallery li{max-height: 801px;}
   
-  
   /* PORTFOLIO */
   /* main > .portfolio */
   .portfolio-list li dl dd:last-child{min-height: 78px;}
+
+  /* STUDY */
+  /* main > .study */
+  .study{padding: 50px 10px;}
+    .study h3{word-break:keep-all;-ms-word-break:keep-all;}
+
+    .study .project{flex-direction: column-reverse;}
+    .study .project > *{width: 100% !important;}
+      .study .project .spec{padding: 20px 0 0 20px;}
+
+  /* SNS */
+  /* main > .sns */
+  .sns {height: 100vh;}
+
+
+  /* CONTACT */
+  /* main > .contact */
+  .contact {height: 100vh;}
 }
 

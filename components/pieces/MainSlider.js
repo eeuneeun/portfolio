@@ -41,7 +41,7 @@ export default function MainSlider() {
           </li>
           <li>
             <Link
-              href="https://chatbot.lotterentacar.net/chat/P2tpY6DXUmRNHKPix/1874b5274aeTlWK"
+              href="https://chatbot.lotterentacar.net/chat/P2kMtoEGcgLBN7hlr/188986070db0KMw"
               target="blank"
               passHref
               legacyBehavior
