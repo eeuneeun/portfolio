@@ -13,11 +13,6 @@ export default function Footer(props) {
       <footer>
         <div className="inner flex-center">
           <h5>(EUN)EVERYDAY CREATIVE</h5>
-          <ul>
-            <li>
-              <Link href="/">github</Link>
-            </li>
-          </ul>
           <p>©WONEUNJAE. ALL Rights Reserved.</p>
         </div>
       </footer>
