@@ -36,7 +36,7 @@ h2{color: #333; font-weight: 600;}
 
 html{height:100vh;}
 html,body{width:100%; margin:0 auto;}
-body{background-color:#fff;*word-break:break-all;-ms-word-break:break-all; font-family:'Calibri', 'MalgunGothic', 'sans-serif';text-align:left; }
+body{background-color:#fff; word-break:break-all; -ms-word-break:break-all; font-family:'Calibri', 'MalgunGothic', 'sans-serif';text-align:left; }
 img,fieldset,iframe{border:0 none}
 li{list-style:none}
 input,select,button{vertical-align:middle}
@@ -423,12 +423,58 @@ main{width: 100%;}
 @media (max-width: 425px){
   /* PROFILE */
   /* main > .profile */
-  .profile .gallery li{max-height: 801px;}
-  
+  .profile .gallery li{max-height: 80px;}
+    .portfolio-list li a{height: 110px;}
+      .profile .gallery li a img{width: 120%;}
+
   
   /* PORTFOLIO */
   /* main > .portfolio */
   .portfolio-list li dl dd:last-child{min-height: 78px;}
+
+  /* STUDY */
+  /* main > .study */
+  .study{padding: 50px 10px;}
+    .study h3{word-break:keep-all;-ms-word-break:keep-all;}
+
+    .study .project{flex-direction: column-reverse;}
+    .study .project > *{width: 100% !important;}
+      .study .project .spec{padding: 20px 0 0 20px;}
+
+  /* SNS */
+  /* main > .sns */
+  .sns {height: 100vh;}
+    .sns .sns-list{flex-wrap: wrap;}
+      .sns article{width: 82%; padding: 0 20px;}
+        .sns article ul{width: 100%;}
+
+
+  /* CONTACT */
+  /* main > .contact */
+  .contact {height: 100vh;}
+    .contact dl dt{width: 130px; font-size: 17px;}
+    .contact dl dd{font-size: 17px;}
+}
+
+@media (max-width: 375px){
+  /* PORTFOLIO */
+  /* main > .portfolio */
+  .portfolio-list li dl dd:nth-child(2) span{display: none;}
+
+}
+
+@media (max-width: 320px){
+   /* STUDDY */
+  /* main > .study */
+  .study .project .spec dl{flex-direction: column; align-items: flex-start;}
+    .study .project .spec dl dt{font-size: 14px; font-weight: 500; position: relative; padding-left: 7px; width: 100%;} 
+      .study .project .spec dl dt::before{content: ''; position: absolute; top: 5%; left: 0; width: 3px; height: 90%; background: #aeaeae;}
+    .study .project .spec dl dd{width: 100%; font-size: 14px; padding-top: 5px;}
+    
+  /* CONTACT */
+  /* main > .contact */
+  .contact dl dt{width: 110px; font-size: 15px;}
+  .contact dl dd{font-size: 15px;}
 }
 
 
