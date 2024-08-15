@@ -7,8 +7,15 @@ import Contact from "../components/menus/Contact.js";
 import Study from "../components/menus/Study.js";
 import Portfolio from "../components/menus/Portfolio.js";
 import Profile from "../components/menus/Profile.js";
+import MainDocument from "../components/pieces/MainDocument.js";
+import Iframe from "react-iframe";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    setIsLoading(true);
+  }, []);
+
   return (
     <>
       <main>
@@ -22,6 +29,17 @@ export default function Home() {
         <Profile />
         <Portfolio />
         <Study />
+        {/* {isLoading && <MainDocument />} */}
+        import Iframe from 'react-iframe'
+        <Iframe
+          url="https://www.sdrive.app/embed/1ptBQD"
+          width="640px"
+          height="320px"
+          id=""
+          className=""
+          display="block"
+          position="relative"
+        />
         <Sns />
         <Contact />
       </main>

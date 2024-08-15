@@ -7,7 +7,6 @@ export default function Study(props) {
     <div id="study" className="study">
       <div className="inner">
         <h2>PERSONAL PROJECT</h2>
-
         <h3>Zenity 를 이용하여 개발한 KVM 관리툴</h3>
         <article className="project">
           <div className="spec">
