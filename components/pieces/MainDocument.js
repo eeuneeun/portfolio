@@ -1,15 +1,44 @@
 import React from "react";
-import { DocumentViewer } from "react-documents";
+import Link from "next/link";
 
-export default function MainDocument() {
+export default function JjabixDocument() {
   return (
     <>
-      <div>MainDocument</div>
-      <DocumentViewer
-        url="https://docs.google.com/presentation/d/17F-O5XLyFoQEC1fCw60N1OsryesIJUHs/edit?usp=drive_link&ouid=107738340155260086348&rtpof=true&sd=true/preview"
-        viewer="url"
-        style="width:100%;height:50vh;"
-      ></DocumentViewer>
+      <div className="document">
+        <h5>Jjabix MainDocument</h5>
+        <ul className="flex-center">
+          <li>
+            <Link href={"/doc/jjabix_ach.pdf"}>
+              <img src="/img/idea_icon.png" alt="idea" />
+            </Link>
+          </li>
+          <li>
+            <Link href={"/doc/jjabix_ppt.pdf"}>
+              <img src="/img/ppt_icon.png" alt="ppt" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/doc/jjabix_ppt.pptx"}
+              onClick={() => alert("ppt는 다운로드 됩니다!")}
+            >
+              <img src="/img/pdf_icon.png" alt="pdf" />
+            </Link>
+          </li>
+        </ul>
+      </div>
     </>
+  );
+}
+
+export function Iframe() {
+  return (
+    <iframe
+      src="http://localhost:3000/doc/jjabix_ppt.pptx"
+      width="600"
+      height="400"
+      title="Example Site"
+      style={{ border: "none" }}
+    />
   );
 }

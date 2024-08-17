@@ -27,6 +27,13 @@ footer h5{padding-top: 0;}
 .footer ul li { padding: 5px 0; font-size: 13px; } 
 .footer p { width: 100%; position: absolute; bottom: 0; text-align: center; } 
 
+/*2-1. Documents*/
+.document{width: 100%;}
+.document h5{width: 0; height: 0; visibility: hidden; overflow: hidden; text-indent: -9999px; }
+.document ul{width: 100%; gap: 10px;}
+.document ul li a{width: 50px;}
+.document ul li a img{width: 100%;}
+
 @media (max-width: 768px) { /* 1-2. gnb */
  .gnb .pc { display: none; } 
  .gnb .mobile { display: block; } 

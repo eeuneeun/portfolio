@@ -29,17 +29,6 @@ export default function Home() {
         <Profile />
         <Portfolio />
         <Study />
-        {/* {isLoading && <MainDocument />} */}
-        import Iframe from 'react-iframe'
-        <Iframe
-          url="https://www.sdrive.app/embed/1ptBQD"
-          width="640px"
-          height="320px"
-          id=""
-          className=""
-          display="block"
-          position="relative"
-        />
         <Sns />
         <Contact />
       </main>

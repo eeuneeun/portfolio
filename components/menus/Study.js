@@ -1,6 +1,7 @@
 /* React */
 import React from "react";
 import { prefix } from "/config/config.js";
+import JjabixDocument from "../pieces/MainDocument";
 
 export default function Study(props) {
   return (
@@ -70,6 +71,9 @@ export default function Study(props) {
               type="video/mp4"
               controls
             ></video>
+          </div>
+          <div>
+            <JjabixDocument />
           </div>
         </article>
       </div>
