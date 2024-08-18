@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { prefix } from "/config/config.js";
 
 export default function JjabixDocument() {
   return (
@@ -8,21 +9,21 @@ export default function JjabixDocument() {
         <h5>Jjabix MainDocument</h5>
         <ul className="flex-center">
           <li>
-            <Link href={"/doc/jjabix_ach.pdf"}>
-              <img src="/img/idea_icon.png" alt="idea" />
+            <Link href={`${prefix}/doc/jjabix_ach.pdf`}>
+              <img src={`${prefix}/img/idea_icon.png`} alt="idea" />
             </Link>
           </li>
           <li>
-            <Link href={"/doc/jjabix_ppt.pdf"}>
-              <img src="/img/ppt_icon.png" alt="ppt" />
+            <Link href={`${prefix}/doc/jjabix_ppt.pdf`}>
+              <img src={`${prefix}/img/ppt_icon.png`} alt="ppt" />
             </Link>
           </li>
           <li>
             <Link
-              href={"/doc/jjabix_ppt.pptx"}
+              href={`${prefix}/doc/jjabix_ppt.pptx`}
               onClick={() => alert("ppt는 다운로드 됩니다!")}
             >
-              <img src="/img/pdf_icon.png" alt="pdf" />
+              <img src={`${prefix}/img/pdf_icon.png`} alt="pdf" />
             </Link>
           </li>
         </ul>
