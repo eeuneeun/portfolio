@@ -29,9 +29,10 @@ export default function JjabixDocument() {
           <li>
             <Link
               onClick={() => alert("ppt는 다운로드 됩니다!")}
-              download={`${prefix}/doc/jjabix_ppt.pptx`}
+              href={`${prefix}/doc/jjabix_ppt.pptx`}
               target="_blank"
               rel="noopener noreferrer"
+              download
             >
               <img src={`${prefix}/img/pdf_icon.png`} alt="pdf" />
             </Link>
