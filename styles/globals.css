@@ -283,7 +283,7 @@ main{width: 100%;}
     .study h2{font-size: 40px; padding-bottom: 50px;}
       .study h3{position: relative; padding-left: 15px;}
       .study h3::before{content: ''; display: inline-block; position: absolute; top: 5%; left: 0; width: 5px; height: 90%; background:#949494;}
-        .study .project{width: 100%; display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 50px;}
+        .study .project{width: 100%; display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 50px; flex-wrap: wrap;}
           .study .project .spec{width: 50%;}
             .study .project .spec dl{width: 100%; display: flex; align-items: center; justify-content: flex-start; padding: 10px 0;}
             .study .project .spec dl:first-child{padding-top: 0;}
