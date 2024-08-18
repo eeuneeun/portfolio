@@ -9,28 +9,25 @@ export default function JjabixDocument() {
         <h5>Jjabix MainDocument</h5>
         <ul className="flex-center">
           <li>
-            <Link href={`${prefix}/doc/jjabix_ach.pdf`}>
-              <img
-                src={`${prefix}/img/idea_icon.png`}
-                alt="idea"
-                target="_blank"
-                rel="noopener noreferrer"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href={`${prefix}/doc/jjabix_ppt.pdf`}>
-              <img
-                src={`${prefix}/img/ppt_icon.png`}
-                alt="ppt"
-                target="_blank"
-                rel="noopener noreferrer"
-              />
+            <Link
+              href={`${prefix}/doc/jjabix_ach.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={`${prefix}/img/idea_icon.png`} alt="idea" />
             </Link>
           </li>
           <li>
             <Link
-              href={`${prefix}/doc/jjabix_ppt.pptx`}
+              href={`${prefix}/doc/jjabix_ppt.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={`${prefix}/img/ppt_icon.png`} alt="ppt" />
+            </Link>
+          </li>
+          <li>
+            <Link
               onClick={() => alert("ppt는 다운로드 됩니다!")}
               download={`${prefix}/doc/jjabix_ppt.pptx`}
               target="_blank"
