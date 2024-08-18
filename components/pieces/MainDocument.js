@@ -31,6 +31,8 @@ export default function JjabixDocument() {
   );
 }
 
+//240818
+// TODO : 페이지 내부에서 열리고 닫히는 우측 뷰어로 만들 것!
 export function Iframe() {
   return (
     <iframe
