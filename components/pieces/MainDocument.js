@@ -9,14 +9,14 @@ export default function JjabixDocument() {
         <h5>Jjabix MainDocument</h5>
         <ul className="flex-center">
           <li>
-            <Link href={`${prefix}/doc/jjabix_ach.pdf`} passHref>
+            <Link href={`${prefix}/doc/jjabix_ach.pdf`} passHref legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">
                 <img src={`${prefix}/img/idea_icon.png`} alt="idea" />
               </a>
             </Link>
           </li>
           <li>
-            <Link href={`${prefix}/doc/jjabix_ppt.pdf`} passHref>
+            <Link href={`${prefix}/doc/jjabix_ppt.pdf`} passHref legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">
                 <img src={`${prefix}/img/ppt_icon.png`} alt="ppt" />
               </a>
@@ -27,6 +27,7 @@ export default function JjabixDocument() {
               onClick={() => alert("ppt는 다운로드 됩니다!")}
               href={`${prefix}/doc/jjabix_ppt.pptx`}
               passHref
+              legacyBehavior
             >
               <a target="_blank" rel="noopener noreferrer" downloads>
                 <img src={`${prefix}/img/pdf_icon.png`} alt="pdf" />
